@@ -39,11 +39,11 @@
     private static string strFileNameCSV = string.Concat(Tool.RandomString(15), ".csv");
 
     protected static string _strODBCString = string.Empty;
-    protected static string server = "warehouse.ckckn9gxbosq.us-west-2.redshift.amazonaws.com";
-    protected static string port = "5439";
-    protected static string masterUsername = "admin_prod";
-    protected static string masterUserPassword = "622jGpjhISfcycLsEXqO";
-    protected static string DBName = "batchreportes";
+    protected static string server = "";
+    protected static string port = "";
+    protected static string masterUsername = "";
+    protected static string masterUserPassword = "";
+    protected static string DBName = "";
 
     [STAThread()]
     static void Main(string[] args)
