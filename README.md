@@ -2,10 +2,12 @@
 Generic library for the functions of the exclusive programmer for the Microsoft .NET Core 2.2 platform onwards.
 
 <h2>Spanish</h2>
-<h3>Detalle de la versión 1.0.15.1503 - 1.0.15.1507 (23/07/2019)</h3>
+<h3>Detalle de la versi&oacute;n 1.0.21.1045 (01/01/2020)</h3>
 <ul type="square">
-  <li>Corrección de la función <strong>Convert DataTable</strong> del m&oacute;dulo <strong>Tool</strong>, debido a que no convierte un objeto DataTable a lista generica.</li>
-</ul>
+  <li>Eliminación de las clases <strong>SQLServerConnection</strong>, <strong>ODBCConnection</strong> y <strong>MySQLConnection</strong>. Estas clases están obsoletas, por lo que se recomienda usar la nueva clase llamada <strong>DbManager</strong>.</li>
+  <li>Nueva clase llamada <strong>DbManager</strong> que realiza la conexión a Base de Datos bajo las tecnologías de acceso a datos para ODBC, OLEDB, SQL Server y MySQL/MariaDB. Su implementación es muy sencilla, reemplazando las tres clases de acceso a datos antes mencionadas, con la inclusión de las mismas funcionalidades de generación de datos, exportación de datos via JSON y la API de Google Drive/Sheets.</li>
+  <li>Otros ajustes adicionales.</li>
+ </ul>
 
 <h3>Requisitos de compilaci&oacute;n y ejecuci&oacute;n.</h3>
 <ul type="square">
@@ -23,23 +25,28 @@ Generic library for the functions of the exclusive programmer for the Microsoft 
 <p>Las siguientes dependencias son necesarias para su correcta ejecuci&oacute;n:</p>
 
 <ul type="square">
-  <li>Microsoft.EntityFrameworkCore 2.2.4 (o superior).</li>
-  <li>Microsoft.EntityFrameworkCore.Design 2.2.4 (o superior).</li>
-  <li>Microsoft.EntityFrameworkCore.Sqlite 2.2.4 (o superior).</li>
-  <li>Microsoft.EntityFrameworkCore.SQLServer 2.2.4 (o superior)</li>
-  <li>NewtonSoft 12.0.2 (o superior).</li>
+  <li>Microsoft.EntityFrameworkCore 2.2.6 (o superior).</li>
+  <li>Microsoft.EntityFrameworkCore.Design 2.2.6 (o superior).</li>
+  <li>Microsoft.EntityFrameworkCore.Sqlite 2.2.6 (o superior).</li>
+  <li>Microsoft.EntityFrameworkCore.SQLServer 2.2.6 (o superior)</li>
+  <li>NewtonSoft 12.0.3 (o superior).</li>
   <li>Iesi Collections 4.0.4 (o superior).</li>
-  <li>Pomelo.EntityFrameworkCore.MySql 2.2.0 (o superior).</li>
-  <li>System.Data.Odbc 4.5.0 (o superior).</li>
-  <li>Google.Apis.Drive.v3 1.40.2.1621 (o superior)</li>
-  <li>Google.Apis.Drive.v2 1.40.2.1621 (o superior)</li>
-  <li>Google.Apis.Sheets.v4 1.40.2.1636 (o superior)</li>
+  <li>Pomelo.EntityFrameworkCore.MySql 2.2.6 (o superior).</li>
+  <li>System.Data.Odbc 4.7.0 (o superior).</li>
+  <li>Google.Apis 1.42.0 (o superior)</li>
+  <li>Google.Apis.Auth 1.42.0 (o superior)</li>
+  <li>Google.Apis.Core 1.42.0 (o superior)</li>
+  <li>Google.Apis.Drive.v3 1.42.0.1778 (o superior)</li>
+  <li>Google.Apis.Drive.v2 1.42.0.1778 (o superior)</li>
+  <li>Google.Apis.Sheets.v4 1.42.0.1791 (o superior)</li>
 </ul>
 
 <h2>English</h2>
-<h3>Detail of the version 1.0.15.1503 - 1.0.15.1507 (23/07/2019)</h3>
+<h3>Detail of the version 1.0.21.1045 (01/01/2020)</h3>
 <ul type="square">
-  <li>Correction of the <strong>ConvertDataTable</strong> function, of the <strong>Tool</strong> module, because it does not convert a DataTable object to a generic list.</li>
+  <li>Removal of the <strong>SQLServerConnection</strong>, <strong>ODBCConnection</strong> and <strong>MySQLConnection</strong> classes. These classes are obsolete, so it is recommended to use the new class called <strong>DbManager</strong>.</li>
+  <li>New class called <strong>DbManager</strong> that makes the connection to Database under the data access technologies for ODBC, OLEDB, SQL Server and MySQL / MariaDB. Its implementation is very simple, replacing the three kinds of data access mentioned above, with the inclusion of the same functionalities of data generation, data export by JSON and the Google Drive/Sheets API's.</li>
+  <li>Other additional settings.</li>
 </ul>
 
 <h3>Compilation and execution requirements</h3>
@@ -58,21 +65,24 @@ Generic library for the functions of the exclusive programmer for the Microsoft 
 <p>The following dependencies necessary for its correct execution:</p>
 
 <ul type="square">
-  <li>Microsoft.EntityFrameworkCore 2.2.4 (or higher).</li>
-  <li>Microsoft.EntityFrameworkCore.Design 2.2.4 (or higher).</li>
-  <li>Microsoft.EntityFrameworkCore.Sqlite 2.2.4 (or higher).</li>
-  <li>Microsoft.EntityFrameworkCore.SQLServer 2.2.4 (or higher)</li>
-  <li>NewtonSoft 12.0.2 (or higher).</li>
+  <li>Microsoft.EntityFrameworkCore 2.2.6 (or higher).</li>
+  <li>Microsoft.EntityFrameworkCore.Design 2.2.6 (or higher).</li>
+  <li>Microsoft.EntityFrameworkCore.Sqlite 2.2.6 (or higher).</li>
+  <li>Microsoft.EntityFrameworkCore.SQLServer 2.2.6 (or higher)</li>
+  <li>NewtonSoft 12.0.3 (or higher).</li>
   <li>Iesi Collections 4.0.4 (or higher).</li>
-  <li>Pomelo.EntityFrameworkCore.MySql 2.2.0 (or higher).</li>
-  <li>System.Data.Odbc 4.5.0 (or higher).</li>
-  <li>Google.Apis.Drive.v3 1.40.2.1621 (or higher)</li>
-  <li>Google.Apis.Drive.v2 1.40.2.1621 (or higher)</li>
-  <li>Google.Apis.Sheets.v4 1.40.2.1636 (or higher)</li>
+  <li>Pomelo.EntityFrameworkCore.MySql 2.2.6 (or higher).</li>
+  <li>System.Data.Odbc 4.7.0 (or higher).</li>
+  <li>Google.Apis 1.42.0 (or higher).</li>
+  <li>Google.Apis.Auth 1.42.0 (or higher).</li>
+  <li>Google.Apis.Core 1.42.0 (or higher).</li>
+  <li>Google.Apis.Drive.v3 1.42.0.1778 (or higher).</li>
+  <li>Google.Apis.Drive.v2 1.42.0.1778 (or higher).</li>
+  <li>Google.Apis.Sheets.v4 1.42.0.1791 (or higher).</li>
 </ul>
 
 <h2>Información adicional</h2>
 <strong>Autor:</strong> OLIMPO BONILLA RAMIREZ.<br/>
-<strong>Versión:</strong> 1.0.15.1507<br/>
+<strong>versi&oacute;n:</strong> 1.0.21.1045 <br/>
 <strong>Correo electronico:</strong> boraolim@hotmail.com <br />
-<strong>Ultima actualización:</strong> 23 de julio de 2019. Ciudad de M&eacute;xico.
+<strong>Ultima actualización:</strong> 1o. de enero de 2020. Ciudad de M&eacute;xico.

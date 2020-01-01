@@ -1,11 +1,9 @@
-﻿namespace TestConsole
+﻿namespace TestUtilities
 {
   using System;
   using System.IO;
   using System.Reflection;
-  using System.Configuration;
   using System.Collections.Generic;
-  using System.Collections.Specialized;
 
   using Utilities;
   public static class GlobalApp
@@ -24,9 +22,10 @@
     public static string FolderPersonal = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
 
     /// <summary>
-    /// Carpeta temporal.
+    /// Carpete de archivos de credenciales.
     /// </summary>
-    public static string FolderTemporal = Path.GetTempPath();
+    /// <returns>Devuelve el nombre de la carpeta de las credenciales de la aplicación.</returns>
+    public static string FolderCredentials = Path.Combine(FolderApp, @"Auth");
 
     /// <summary>
     /// Carpeta LOG de la aplicación.
@@ -34,20 +33,15 @@
     public static string FolderLog = Path.Combine(FolderApp, @"Log");
 
     /// <summary>
-    /// Carpeta RPT de la aplicación.
-    /// </summary>
-    public static string FolderRpt = Path.Combine(FolderApp, @"Rpt");
-
-    /// <summary>
     /// Carpeta LAYOUT de la aplicación.
     /// </summary>
     public static string FolderLayOut = Path.Combine(FolderApp, @"Layout"); 
     
     /// <summary>
-    /// Carpeta donde se encuentran las credenciales de Google API.
+    /// Carpeta temporal.
     /// </summary>
-    public static string FolderCredentialsGoogleAPI = Path.Combine(FolderApp, @"Auth");
-
+    public static string FolderTemporal = Path.Combine(FolderApp, @"Temp"); 
+  
     /// <summary>
     /// Numero de error.
     /// </summary>
@@ -89,14 +83,5 @@
     /// <returns>Devuelve un entero con el total de número de procesadores que tiene el equipo local donde se está ejecutando esta aplicación.</returns>
     public static uint NumeroProcesadores = (uint)Environment.ProcessorCount;
 
-    /// <summary>
-    /// Variable global que guarda las cadenas de conexión del archivo de configuración de la aplicacion (ConnectionStrings).
-    /// </summary>
-    public static ConnectionStringSettingsCollection ConnectionDB = ConfigurationManager.ConnectionStrings;
-
-    /// <summary>
-    /// Variable global que guarda las claves de la seccion de valores de la aplicación (AppSettings).
-    /// </summary>
-    public static NameValueCollection ValoresApp = ConfigurationManager.AppSettings;
   }
 }
