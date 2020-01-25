@@ -142,11 +142,17 @@
         var ArchivoReporteStr = string.Empty;
 
         // Uso de DBFactory.
-		// El primer parametro es el nombre de la conexión a Base de Datos, según en el archivo AppSettings.json.
-		// El segundo parametro es el tipo de conexión por plataforma de Base de Datos.
+		    // El primer parametro es el nombre de la conexión a Base de Datos, según en el archivo AppSettings.json.
+		    // El segundo parametro es el tipo de conexión por plataforma de Base de Datos.
         Console.WriteLine("Haciendo una consulta SQL a Base de Datos (AWS Redshift via ODBC...)");
         using (var oDb = new DBManager("AWSConnectionBD", DataBaseProviders.Odbc))
         {
+          // Carga de parametros.
+          // var _oParam = new List<IDbDataParameter>();
+          // _oParam.Add(oDb.CreateParameter("@Id", valor1, System.Data.DBType.String))
+          // _oParam.Add(oDb.CreateParameter("@Id2", valor2, System.Data.DBType.String))
+          // var oDt = oDb.GetDataToDataTable("SQL_Command_Strng", System.Data.CommandType.Text, _oParam.ToArray());
+
           var oDt = oDb.GetDataToDataTable("SELECT * FROM public.\"schema-convdatosgenerales-keops\" t1;", System.Data.CommandType.Text, null);
           Console.WriteLine("Consulta ejecutada correctamente. Total de registros: {0}.", oDt.Rows.Count);
 
