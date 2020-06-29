@@ -2,7 +2,7 @@
 Generic library for the functions of the exclusive programmer for the Microsoft .NET Core 3.0 platform onwards.
 
 <h2>Spanish</h2>
-<h3>Detalle de la versi&oacute;n 1.0.21.8460 (25/01/2020)</h3>
+<h3>Detalle de la versi&oacute;n 1.0.22.7481 (2020/06/29)</h3>
 <ul type="square">
   <li>Otros ajustes adicionales.</li>
  </ul>
@@ -23,25 +23,25 @@ Generic library for the functions of the exclusive programmer for the Microsoft 
 <p>Las siguientes dependencias son necesarias para su correcta ejecuci&oacute;n:</p>
 
 <ul type="square">
-  <li>Microsoft.EntityFrameworkCore 3.1.1 (o superior).</li>
-  <li>Microsoft.EntityFrameworkCore.Design 3.1.1 (o superior).</li>
-  <li>Microsoft.EntityFrameworkCore.Sqlite 3.1.1 (o superior).</li>
-  <li>Microsoft.EntityFrameworkCore.SQLServer 3.1.1 (o superior)</li>
+  <li>Microsoft.EntityFrameworkCore 3.1.2 (o superior).</li>
+  <li>Microsoft.EntityFrameworkCore.Design 3.1.2 (o superior).</li>
+  <li>Microsoft.EntityFrameworkCore.Sqlite 3.1.2 (o superior).</li>
+  <li>Microsoft.EntityFrameworkCore.SQLServer 3.1.2 (o superior)</li>
   <li>NewtonSoft 12.0.3 (o superior).</li>
   <li>Iesi Collections 4.0.4 (o superior).</li>
-  <li>Pomelo.EntityFrameworkCore.MySql 3.1.1 (o superior).</li>
+  <li>Pomelo.EntityFrameworkCore.MySql 3.1.2 (o superior).</li>
   <li>System.Data.Odbc 4.7.0 (o superior).</li>
   <li>System.Data.SqlClient 4.8.0 (o superior).</li>
-  <li>Google.Apis 1.43.0 (o superior)</li>
-  <li>Google.Apis.Auth 1.43.0 (o superior)</li>
-  <li>Google.Apis.Core 1.43.0 (o superior)</li>
-  <li>Google.Apis.Drive.v3 1.43.0.1807 (o superior)</li>
-  <li>Google.Apis.Drive.v2 1.43.0.1807 (o superior)</li>
-  <li>Google.Apis.Sheets.v4 1.43.0.1839 (o superior)</li>
+  <li>Google.Apis 1.44.0 (o superior)</li>
+  <li>Google.Apis.Auth 1.44.0 (o superior)</li>
+  <li>Google.Apis.Core 1.44.0 (o superior)</li>
+  <li>Google.Apis.Drive.v3 1.44.0.1888 (o superior)</li>
+  <li>Google.Apis.Drive.v2 1.44.0.1888 (o superior)</li>
+  <li>Google.Apis.Sheets.v4 1.44.0.1839 (o superior)</li>
 </ul>
 
 <h2>English</h2>
-<h3>Detail of the version 1.0.21.8460 (25/01/2020)</h3>
+<h3>Detail of the version 1.0.22.7481 (2020/06/29)</h3>
 <ul type="square">
   <li>Other additional settings.</li>
 </ul>
@@ -62,25 +62,25 @@ Generic library for the functions of the exclusive programmer for the Microsoft 
 <p>The following dependencies necessary for its correct execution:</p>
 
 <ul type="square">
-  <li>Microsoft.EntityFrameworkCore 3.1.1 (or higher).</li>
-  <li>Microsoft.EntityFrameworkCore.Design 3.1.1 (or higher).</li>
-  <li>Microsoft.EntityFrameworkCore.Sqlite 3.1.1 (or higher).</li>
-  <li>Microsoft.EntityFrameworkCore.SQLServer 3.1.1 (or higher)</li>
+  <li>Microsoft.EntityFrameworkCore 3.1.2 (or higher).</li>
+  <li>Microsoft.EntityFrameworkCore.Design 3.1.2 (or higher).</li>
+  <li>Microsoft.EntityFrameworkCore.Sqlite 3.1.2 (or higher).</li>
+  <li>Microsoft.EntityFrameworkCore.SQLServer 3.1.2 (or higher)</li>
   <li>NewtonSoft 12.0.3 (or higher).</li>
   <li>Iesi Collections 4.0.4 (or higher).</li>
-  <li>Pomelo.EntityFrameworkCore.MySql 3.1.1 (or higher).</li>
+  <li>Pomelo.EntityFrameworkCore.MySql 3.1.2 (or higher).</li>
   <li>System.Data.Odbc 4.7.0 (or higher).</li>
-  <li>System.Data.SqlClient 4.8.0 (or higher).</li>
-  <li>Google.Apis 1.43.0 (or higher).</li>
-  <li>Google.Apis.Auth 1.43.0 (or higher).</li>
-  <li>Google.Apis.Core 1.43.0 (or higher).</li>
-  <li>Google.Apis.Drive.v3 1.43.0.1807 (or higher).</li>
-  <li>Google.Apis.Drive.v2 1.43.0.1807 (or higher).</li>
-  <li>Google.Apis.Sheets.v4 1.43.0.1839 (or higher).</li>
+  <li>System.Data.SqlClient 4.8.1 (or higher).</li>
+  <li>Google.Apis 1.44.0 (or higher).</li>
+  <li>Google.Apis.Auth 1.44.0 (or higher).</li>
+  <li>Google.Apis.Core 1.44.0 (or higher).</li>
+  <li>Google.Apis.Drive.v3 1.44.0.1888 (or higher).</li>
+  <li>Google.Apis.Drive.v2 1.44.0.1888 (or higher).</li>
+  <li>Google.Apis.Sheets.v4 1.44.0.1895 (or higher).</li>
 </ul>
 
 <h2>Información adicional</h2>
 <strong>Autor:</strong> OLIMPO BONILLA RAMIREZ.<br/>
-<strong>versi&oacute;n:</strong> 1.0.21.8460 <br/>
+<strong>versi&oacute;n:</strong> 1.0.22.7481 <br/>
 <strong>Correo electronico:</strong> boraolim@hotmail.com <br />
-<strong>Ultima actualización:</strong> 25 de enero de 2020. Ciudad de M&eacute;xico.
+<strong>Ultima actualización:</strong> 29 de junio de 2020. Ciudad de M&eacute;xico.
