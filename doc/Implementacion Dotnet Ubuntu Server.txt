@@ -1,0 +1,207 @@
+# COMPILACION EN VISUAL STUDIO CODE
+
+# Requisitos:
+# * Tener instalado .NET Core en Linux Ubuntu Server.
+# * Tener instalado Visual Studio Code.
+
+# PASO 1. Crear una carpeta donde vamos a tener nuestra aplicación en ASP.NET MVC Core:
+# =====================================================================================
+# Por ejemplo:
+$ sudo mkdir -p AspNetCoreSamples/{TestWebApp1,TestWebApp2}
+$ sudo mkdir -p AspNetCoreSamples/TestWebApp1/{MVC,Utilities}
+
+# PASO 2. Asignarle los permisos a la cuenta de usuario actual a las carpetas creadas:
+# ====================================================================================
+$ sudo chown -R www-data:www-data AspNetCoreSamples/{TestWebApp1,TestWebApp2}
+$ sudo chown -R www-data:www-data AspNetCoreSamples/TestWebApp1/{MVC,Utilities}
+
+# PASO 3. Asignarle los permisos de escritura a las carpetas creadas.
+# ===================================================================
+$ sudo chmod -R g+rwX AspNetCoreSamples/{TestWebApp1,TestWebApp2}
+$ sudo chmod -R g+rwX AspNetCoreSamples/TestWebApp1/{MVC,Utilities}
+
+# NOTA: Es importante entender que esto resuelve problemas de permisos para la ejecución del comando "dotnet" en consola.
+# Es preferente hacerlo en otra carpeta donde se pueda guardar los archivos sin problemas de acceso.
+
+# PASO 4. Crear el archivo de solución del proyecto.
+# ==================================================
+# Ingresar hasta en la carpeta 'AspNetCoreSamples', vamos a ejecutar el siguiente comando dotnet para crear un archivo de solución:
+$ cd AspNetCoreSamples
+$ sudo dotnet new sln -o TestWebApp1
+
+# NOTA: Al crear el archivo de solución, se está especificando a que carpeta se va a generar el archivo.
+
+# PASO 5. Crear un projecto via comando dotnet para una aplicación en ASP.NET MCV Core:
+# =====================================================================================
+$ cd TestWebApp1
+$ sudo dotnet new mvc -o MVC
+
+# PASO 6. Agregar un proyecto MVC a un archivo de solución de ASP.NET Core
+# ========================================================================
+$ cd ..
+$ sudo dotnet sln TestWebApp.sln add MVC/MVC.csproj
+$ sudo dotnet restore
+
+# Con esto ya tenemos armado nuestra carpeta de proyectos. Si desea agregar más proyectos a la solución, repetir los pasos 4 y 5.
+# Fuente: https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-sln
+
+# PASO 6. Abrir Visual Studio Code para 
+
+# PASO 7. Otras opciones de compilación adicionales:
+# ==================================================
+# Configuración para modo Release:
+$ sudo dotnet build -p:Version=1.2.3.4 --configuration Release
+
+# Agregar un paquete de Nuget:
+$ sudo dotnet add package [Paquete] --version [1.0.0]
+
+# Compilar:
+$ sudo dotnet build
+
+# Ejecutar:
+$ sudo dotnet run
+
+# Cree un proyecto y sus dependencias para un tiempo de ejecución específico (en este ejemplo, Ubuntu 18.04):
+$ sudo dotnet build --runtime ubuntu.18.04-x64
+
+# PASO 8. Compilación de una aplicación en ASP.NET Core para publicar en un directorio virtual.
+# =============================================================================================
+$ sudo dotnet publish --configuration Release --output "/var/www/website1/public_html/"
+
+# Copia directamente el ensamblado generado en modo "Release" directamente sobre los directorios virtuales creados
+# para alojar el sitio web.
+
+# PASO 9. Deployment a Nginx.
+# ===========================
+# Agregar las siguientes lineas al archivo /etc/nginx/sites-available/default el siguiente contenido:
+
+server
+{
+  # Puerto del servidor.
+  listen 6101 default_server;
+  listen [::]:6101 default_server;
+
+  # Carpeta log de la aplicación web (para detectar errores en tiempo de ejecución).
+  error_log     /var/www/website1/log/error.txt;
+
+  # Nombre del servidor.
+  server_name _;
+
+  # Archivos estaticos.
+  location ~ ^/(images|javascript|js|css|flash|media|static)/
+  {
+    root       /var/www/website1/public_html/wwwroot/;
+    expires 1d;
+    autoindex off;
+  }
+
+  # Configuración general del proxy inverso.
+  location /
+  {
+    proxy_pass http://localhost:5100;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection keep-alive;
+    proxy_set_header Host $host:$server_port;
+    proxy_cache_bypass $http_upgrade;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+
+    client_max_body_size 10m;
+    client_body_buffer_size 128k;
+    proxy_connect_timeout 90;
+    proxy_send_timeout 90;
+    proxy_read_timeout 90;
+    proxy_buffers 32 4k;
+  }
+}
+
+# Ahora que el archivo está creado, lo agregaremos a la carpeta "/etc/nginx/sites-enabled/" 
+# para decirle a NGINX que lo habilite. La sintaxis es la siguiente:
+
+$ sudo rm -r /etc/nginx/sites-enabled/default
+$ sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+
+# Despues hay que reiniciar nginx:
+
+$ sudo systemctl restart nginx
+
+# Probar que se haya levantado la aplicación web. Escribir: http://[localhost o IP]:[puerto]. Es posible que 
+# salga un error No. 502 por que todavia falta arrancar de verdad la aplicación web de ASP.NET Core.
+
+# PASO 10. Creación de un servicio de arranque para la aplicacion web en .NET Core.
+# =================================================================================
+# Crear un archivo llamado "WebSite1.service" por medio del siguiente comando:
+
+$ sudo nano /etc/systemd/system/WebSite1.service
+
+# y escribimos lo siguiente:
+
+[Unit]
+Description=Demo ASP.Net Project
+
+[Service]
+WorkingDirectory=/var/www/website1/public_html
+ExecStart=/usr/bin/dotnet /var/www/website1/public_html/MVC.dll
+Restart=always
+RestartSec=10 # Restart service after 10 seconds if dotnet service crashes 
+SyslogIdentifier=offershare-web-app
+KillSignal=SIGINT
+User=www-data
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
+
+# Indicar cuántos segundos hay que esperar para que la aplicación se cierre después de recibir la señal de interrupción inicial.
+# Si la aplicación no se cierra en este período, se emite SIGKILL para terminar la aplicación.
+# El tiempo de espera predeterminado para la mayoría de las distribuciones es de 90 segundos.
+TimeoutStopSec=90
+
+[Install]
+WantedBy=multi-user.target
+
+# Guardamos el archivo. Primero hay que habilitar el servicio:
+
+$ sudo systemctl enable WebSite1.service
+
+# Despues hay que arrancarlo:
+
+$ sudo systemctl start WebSite1.service
+
+# Podemos ver su status:
+
+$ sudo systemctl status WebSite1.service
+
+# Si la aplicación de ASP.NET Core se sigue actualizando y modificando y subir todos los cambios a Productivo, hay que
+# reiniciar el servicio de la siguiente manera.
+
+$ sudo systemctl restart WebSite1.service
+
+# Con esto debe aparecer ya la aplicación en .NET Core funcionando de manera correcta.
+
+# PASO 10. Agregar otras referencias
+# ==================================
+
+$ sudo dotnet add package Microsoft.Extensions.Configuration
+$ sudo dotnet add package Microsoft.Extensions.Configuration.FileExtensions
+$ sudo dotnet add package Microsoft.Extensions.Configuration.Json
+
+En el archivo .csproj agregar en el <PropertyGroup>:
+
+    <PackageId>Utilities.Core.dll</PackageId>
+    <Title>Utilities.Core.dll</Title>
+    <Description>Library of common functions of the .NET.Core programmer, for version 2.2 or higher of the Microsoft .NET Core.</Description>
+    <Version>1.0.8.4550</Version>
+    <Authors>Olimpo Bonilla Ramirez</Authors>
+    <Company>Hogar S.A. de C.V.</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IsPackable>true</IsPackable>  
+
+Empaquetar el paquete:
+
+$ sudo dotnet publish --configuration Release -o "/media/administrador/DATADISK_01/Utilities.Core.Code/Utilities/nuspec" --no-dependencies	
+$ sudo dotnet pack -o publish -c Release 
+
+Publicar un paquete:
+$ sudo dotnet nuget push Utilities.Core.dll.1.0.22.1054.nupkg -s https://www.nuget.org -k oy2ctdxzmte2njkwamnqoo6rf3noytve5jdezjn5f5526y
+

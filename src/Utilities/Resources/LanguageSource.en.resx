@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="strMessageErr" xml:space="preserve">
+    <value>An error of type 'UtilitiesException' ocurried. Details:</value>
+  </data>
+  <data name="strMessageErrByType" xml:space="preserve">
+    <value>An error of type '{0}' occurred. Details:</value>
+  </data>
+  <data name="strDateTimeFormatInvalid" xml:space="preserve">
+    <value>Invalid DateTime type string format value.</value>
+  </data>
+  <data name="strDataReaderEmpty" xml:space="preserve">
+    <value>The DataReader object cannot be empty or null.</value>
+  </data>
+  <data name="strDataTableEmpty" xml:space="preserve">
+    <value>The DataTable object cannot be empty or null.</value>
+  </data>
+  <data name="strEncodingInitEmpty" xml:space="preserve">
+    <value>There are no source or destination encodings in the system.</value>
+  </data>
+  <data name="strEncodingListEmpty" xml:space="preserve">
+    <value>There is no list of text encodings available in the system.</value>
+  </data>
+  <data name="strFileEndEmpty" xml:space="preserve">
+    <value>The name of the destination file cannot be null or empty.</value>
+  </data>
+  <data name="strFileInitEmpty" xml:space="preserve">
+    <value>The source file name cannot be null or empty.</value>
+  </data>
+  <data name="strFileNameEmpty" xml:space="preserve">
+    <value>The content of the file '{0}' is empty or null.</value>
+  </data>
+  <data name="strFileNameExists" xml:space="preserve">
+    <value>The file '{0}' does not exists.</value>
+  </data>
+  <data name="strFileNameRequired" xml:space="preserve">
+    <value>The file name cannot be empty or null.</value>
+  </data>
+  <data name="strFilterFileEmpty" xml:space="preserve">
+    <value>The file extension filter cannot be empty or null.</value>
+  </data>
+  <data name="strFolderEmpty" xml:space="preserve">
+    <value>The folder name cannot be empty or null.</value>
+  </data>
+  <data name="strGenericListRequired" xml:space="preserve">
+    <value>The generic list cannot be empty or null.</value>
+  </data>
+  <data name="strMessageErrPatternRequired" xml:space="preserve">
+    <value>The regex validation pattern or format cannot be empty or null.</value>
+  </data>
+  <data name="strMessageErrTextValueRequired" xml:space="preserve">
+    <value>The text string cannot be empty or null.</value>
+  </data>
+  <data name="strSeparatorRequired" xml:space="preserve">
+    <value>Invalid separator character.</value>
+  </data>
+  <data name="strRangeMonthRequired" xml:space="preserve">
+    <value>Month value out of range.</value>
+  </data>
+  <data name="strArrayByteRequired" xml:space="preserve">
+    <value>Byte array is a required value.</value>
+  </data>
+  <data name="strBase64URIInvalid" xml:space="preserve">
+    <value>Invalid image Base64 text string format.</value>
+  </data>
+  <data name="strFormatImageRequired" xml:space="preserve">
+    <value>Invalid image file format.</value>
+  </data>
+  <data name="strHttpStatusCode400" xml:space="preserve">
+    <value>Bad request. Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode401" xml:space="preserve">
+    <value>Unauthorized. You do not have access to view the required resource.</value>
+  </data>
+  <data name="strHttpStatusCode402" xml:space="preserve">
+    <value>Payment required. If the problem persists, please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode403" xml:space="preserve">
+    <value>Forbidden. You do not have permission to execute this operation.</value>
+  </data>
+  <data name="strHttpStatusCode404" xml:space="preserve">
+    <value>Not found. The resource you were looking for does not exist or was not found.</value>
+  </data>
+  <data name="strHttpStatusCode405" xml:space="preserve">
+    <value>Method not allowed. Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode406" xml:space="preserve">
+    <value>Not acceptable. Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode407" xml:space="preserve">
+    <value>Proxy authentication required. Please report this incident to the Network Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode408" xml:space="preserve">
+    <value>Request Timeout. Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode409" xml:space="preserve">
+    <value>Conflict. Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode410" xml:space="preserve">
+    <value>Gone. Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode411" xml:space="preserve">
+    <value>Length required. Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode412" xml:space="preserve">
+    <value>Precondition failed. Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode413" xml:space="preserve">
+    <value>Request entity too large. Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode414" xml:space="preserve">
+    <value>Request URI too long. Please try to process this request again.</value>
+  </data>
+  <data name="strHttpStatusCode415" xml:space="preserve">
+    <value>Unsupported media type. Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode416" xml:space="preserve">
+    <value>Requested range not satisfiable. Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode417" xml:space="preserve">
+    <value>Expectation failed. Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode418" xml:space="preserve">
+    <value>I'm a teapot. Take your time as your request is processed.</value>
+  </data>
+  <data name="strHttpStatusCode420" xml:space="preserve">
+    <value>Method failure. Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode422" xml:space="preserve">
+    <value>Unprocessable entity. Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode423" xml:space="preserve">
+    <value>Locked! Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode424" xml:space="preserve">
+    <value>Failed dependency. Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode425" xml:space="preserve">
+    <value>Too early. Your request is very fast. Please wait and try again.</value>
+  </data>
+  <data name="strHttpStatusCode426" xml:space="preserve">
+    <value>Upgrade required. Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode428" xml:space="preserve">
+    <value>Precondition required. Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode429" xml:space="preserve">
+    <value>Too many requests. If the problem persists, please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode431" xml:space="preserve">
+    <value>Request header fields too large. If the problem persists, please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode444" xml:space="preserve">
+    <value>No response (nginx). Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode449" xml:space="preserve">
+    <value>Retry with (Internet Information Services). If the problem persists, please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode450" xml:space="preserve">
+    <value>Blocked by Windows Parental Controls (Microsoft). Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode451" xml:space="preserve">
+    <value>Unavailable for legal reasons. This is out of our reach.</value>
+  </data>
+  <data name="strHttpStatusCode499" xml:space="preserve">
+    <value>Client closed request (nginx). Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode500" xml:space="preserve">
+    <value>Internal server error. Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode501" xml:space="preserve">
+    <value>Not implemented. Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode502" xml:space="preserve">
+    <value>Bad gateway.</value>
+  </data>
+  <data name="strHttpStatusCode503" xml:space="preserve">
+    <value>Service unavailable. Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode504" xml:space="preserve">
+    <value>Gateway timeout. Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode505" xml:space="preserve">
+    <value>HTTP version not supported. Please report this incident to the Network Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode506" xml:space="preserve">
+    <value>Variant also negotiates. Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode507" xml:space="preserve">
+    <value>Insufficient storage. Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode508" xml:space="preserve">
+    <value>Loop detected. Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode509" xml:space="preserve">
+    <value>Bandwidth limit exceeded. Please report this incident to the Network Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode510" xml:space="preserve">
+    <value>Not extended. Please report this incident to the System Administrator.</value>
+  </data>
+  <data name="strHttpStatusCode511" xml:space="preserve">
+    <value>Network authentication required. Please report this incident to the Network Administrator.</value>
+  </data>
+  <data name="strValueGuidInvalid" xml:space="preserve">
+    <value>Invalid Guid seed format.</value>
+  </data>
+  <data name="strValueGuidSeedRequired" xml:space="preserve">
+    <value>The seed to encrypt cannot be null or empty.</value>
+  </data>
+  <data name="strValueToEncryptRequired" xml:space="preserve">
+    <value>The value to be encrypted cannot be null or empty.</value>
+  </data>
+  <data name="strValueDecryptNotBase64" xml:space="preserve">
+    <value>The encrypted input parameter is not Base64 encoded.</value>
+  </data>
+  <data name="strFailedSMSSended" xml:space="preserve">
+    <value>The generation of the SMS text message was not generated. Try again. If the problem persists, check with your messaging provider to verify this issue.</value>
+  </data>
+  <data name="strMessageTextRequired" xml:space="preserve">
+    <value>The content of the SMS message cannot be empty or null.</value>
+  </data>
+  <data name="strNumberPhoneRequired" xml:space="preserve">
+    <value>The phone number cannot be empty or null.</value>
+  </data>
+  <data name="strFileExtensionJSONInvalid" xml:space="preserve">
+    <value>The key or certificate JSON file format for Google API has an invalid extension.</value>
+  </data>
+  <data name="strFileExtensionKeyInvalid" xml:space="preserve">
+    <value>The key or certificate file format for the Google API has an invalid extension.</value>
+  </data>
+  <data name="strFileKeyRequired" xml:space="preserve">
+    <value>The key or JSON file associated with the Google API service account cannot be empty or null.</value>
+  </data>
+  <data name="strGoogleServiceAccountNotValid" xml:space="preserve">
+    <value>The Google API service account is not a valid email format.</value>
+  </data>
+  <data name="strGoogleServiceAccountRequired" xml:space="preserve">
+    <value>The Google API service account is a required value.</value>
+  </data>
+  <data name="strGoogleAPISourceId" xml:space="preserve">
+    <value>The Google Drive resource identifier cannot be null or empty.</value>
+  </data>
+  <data name="strGoogleAPIFileCreatedByInfo" xml:space="preserve">
+    <value>File created on {0} by {1}.</value>
+  </data>
+  <data name="strGoogleAPIFileCreatedInfo" xml:space="preserve">
+    <value>File created on {0}.</value>
+  </data>
+  <data name="strGoogleAPIFolderCreatedByInfo" xml:space="preserve">
+    <value>Folder created on {0} by {1}.</value>
+  </data>
+  <data name="strGoogleAPIFolderCreatedInfo" xml:space="preserve">
+    <value>Folder created on {0}.</value>
+  </data>
+  <data name="strGoogleAPISubFolderCreatedByInfo" xml:space="preserve">
+    <value>Subfolder created on {0} by {1}.</value>
+  </data>
+  <data name="strGoogleAPISubFolderCreatedInfo" xml:space="preserve">
+    <value>Subfolder created on {0}.</value>
+  </data>
+  <data name="strObjectToXMLEmpty" xml:space="preserve">
+    <value>The generic object to convert to XML cannot be null or empty.</value>
+  </data>
+  <data name="strStringXMLRequired" xml:space="preserve">
+    <value>The value of the XML string cannot be null or empty.</value>
+  </data>
+  <data name="strSQLQueryStringRequired" xml:space="preserve">
+    <value>The SQL statement is a required parameter.</value>
+  </data>
+  <data name="strCSVExtensionRequired" xml:space="preserve">
+    <value>Invalid target dataset file format.</value>
+  </data>
+  <data name="strJqGridTitleRequired" xml:space="preserve">
+    <value>The title name of jqGrid component is required.</value>
+  </data>
+  <data name="strSQLQueryToSingleRequired" xml:space="preserve">
+    <value>The generated SQL query brings more than one record. Write the SQL statement correctly and make sure the result is from a single record.</value>
+  </data>
+  <data name="strSQLTransactionFailed" xml:space="preserve">
+    <value>The active transaction in the Database failed. The changes have been reversed.</value>
+  </data>
+</root>

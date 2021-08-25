@@ -1,0 +1,25 @@
+# Build results:
+[Db]ebug/
+[Db]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+[Xx]64/
+[Xx]86/
+[Bb]in/
+[Oo]bj/
+[Oo]bj/[Dd]ebug]/
+[Oo]bj/[Rr]elease]/
+[Pp]ublish/
+[Nn]uspec/lib/
+[Nn]uspec/runtimes/
+[Oo]bfuscator_Output/
+*.dll
+*.pdb
+*.deps.*
+*.log
+*.orig
+.tmp/
+.vs/
+*.nupkg
+# .vscode/
+src/Unnamed_Protect.crproj

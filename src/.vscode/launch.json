@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0",
+  "configurations": [   
+    {
+      "name": "TestUtilities",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/TestUtilities/bin/Debug/netcoreapp3.0/TestUtilities.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/TestUtilities",
+      "console": "internalConsole",
+      "stopAtEntry": false,
+      "internalConsoleOptions": "openOnSessionStart"
+    },
+    {
+      "name": "Utilities",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/Utilities/bin/Debug/netcoreapp3.1/Utilities.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Utilities",
+      "console": "internalConsole",
+      "stopAtEntry": false,
+      "internalConsoleOptions": "openOnSessionStart"
+    }
+  ],
+  "compounds" : [
+    {
+      "name": "All",
+      "configurations": [
+          "TestUtilities",
+          "Utilities"
+      ]
+    }
+  ]
+}

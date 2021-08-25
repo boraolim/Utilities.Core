@@ -1,19 +1,25 @@
-<h1>Utilities.Core.dll - Programmer functions library for .NET Core (Samples).</h1>
-Generic library for the functions of the exclusive programmer for the Microsoft .NET Core 3.0 platform onwards.
+<h1>Utilities.Core.dll - Programmer functions library for .NET Core (source code).</h1>
+Generic library for the functions of the exclusive programmer for the Microsoft .NET Core 3.1 platform onwards.
 
 <h2>Spanish</h2>
-<h3>Detalle de la versi&oacute;n 1.0.23.8930 (2020/07/13)</h3>
+
+<h3>NOTA IMPORTANTE</h3>
+<p>El paquete de Nuget<a href="https://www.nuget.org/packages/Utilities.NETFX40.dll/">Utilities.NETFX40.dll</a> ya no será soportado. Usar el paquete para .NET Core.</p>
+
+<h3>Detalle de la versi&oacute;n 1.0.24.6032 (2021/08/26)</h3>
 <ul type="square">
-  <li>Correcci&oacute;n de la funci&oacute;n <strong>RandomString</strong> de la clase <strong>Tool</strong>.</li>
+  <li>Rediseño de la librería para .NET Core 3.1 en adelante, en base al principio de inyección de dependencias.</li>
+  <li>Se eliminan los componentes <strong>JSONSerialization, LogBuilder y LogFiles</strong>, entre otros objetos innecesarios.</li>
+  <li>Rediseño de las funciones de conexión a Base de Datos para SQL Server, conexiones ODBC y MySQL|MariaDB por medio de inyecci&oacute;n de dependencias.</li>
   <li>Otros ajustes adicionales.</li>
  </ul>
 
 <h3>Requisitos de compilaci&oacute;n y ejecuci&oacute;n.</h3>
 <ul type="square">
-  <li>Este ensamblado se ejecuta con una versi&oacute;n de Microsoft .NET Core 3.0 en adelante en multiplataforma.</li>
+  <li>Este ensamblado se ejecuta con una versi&oacute;n de Microsoft .NET Core 3.1 en adelante en multiplataforma.</li>
 </ul>
 
-<h3>Descargar el ensamblado</h3>
+<h3>Descargar el ensamblado.</h3>
 <p>Para descargarlo, puede ir a <a href="https://www.nuget.org/packages/Utilities.Core.dll/">este enlace</a> o bien ejecutando la siguiente sentencia desde la consola de comandos en Windows:</p>
 
 <pre>dotnet add package Utilities.Core.dll</pre>
@@ -24,34 +30,52 @@ Generic library for the functions of the exclusive programmer for the Microsoft 
 <p>Las siguientes dependencias son necesarias para su correcta ejecuci&oacute;n:</p>
 
 <ul type="square">
-  <li>Microsoft.EntityFrameworkCore 3.1.1 (o superior).</li>
-  <li>Microsoft.EntityFrameworkCore.Design 3.1.1 (o superior).</li>
-  <li>Microsoft.EntityFrameworkCore.Sqlite 3.1.1 (o superior).</li>
-  <li>Microsoft.EntityFrameworkCore.SQLServer 3.1.1 (o superior)</li>
-  <li>NewtonSoft 12.0.3 (o superior).</li>
-  <li>Iesi Collections 4.0.4 (o superior).</li>
-  <li>Newtonsoft.Json.Schema 3.0.13 (o superior).</li>
-  <li>Pomelo.EntityFrameworkCore.MySql 3.1.0 (o superior).</li>
-  <li>System.Data.Odbc 4.7.0 (o superior).</li>
-  <li>System.Data.SqlClient 4.8.0 (o superior). </li>
-  <li>Google.Apis 1.48.0 (o superior). </li>
-  <li>Google.Apis.Core 1.48.0 (o superior). </li>
-  <li>Google.Apis.Auth 1.48.0 (o superior). </li>
-  <li>Google.Apis.Drive.v2 1.48.0.1995 (o superior). </li>
-  <li>Google.Apis.Drive.v3 1.48.0.1995 (o superior). </li>
-  <li>Google.Apis.Sheets.v4 1.48.0.2007 (o superior). </li>
+  <li>IESi.Collections 4.0.4.</li>
+  <li>iTextSharp.LGPLv2.Core 1.7.3.</li>
+  <li>Microsoft.EntityFrameworkCore 5.0.9.</li>
+  <li>Microsoft.EntityFrameworkCore.Design 5.0.9.</li>
+  <li>Microsoft.EntityFrameworkCore.Relational 5.0.9.</li>
+  <li>Microsoft.EntityFrameworkCore.Sqlite 5.0.9.</li>
+  <li>Microsoft.EntityFrameworkCore.SqlServer 5.0.9.</li>
+  <li>Microsoft.Extensions.Configuration 5.0.0.</li>
+  <li>Microsoft.Extensions.Configuration.Binder 5.0.0.</li>
+  <li>Microsoft.Extensions.Configuration.EnvironmentVariables 5.0.0.</li>
+  <li>Microsoft.Extensions.Configuration.FileExtensions 5.0.0.</li>
+  <li>Microsoft.Extensions.Configuration.JSON 5.0.0.</li>
+  <li>Microsoft.Extensions.Localization 5.0.9.</li>
+  <li>MySql.Data 8.0.26.</li>
+  <li>Newtonsoft.Json.Schema 3.0.14.</li>
+  <li>PdfSharpCore 1.2.17.</li>
+  <li>NewtonSoft.json 13.0.1.</li>
+  <li>Pomelo.EntityFrameworkCore.MySql 5.0.1.</li>
+  <li>System.Data.Odbc 5.0.0.</li>
+  <li>System.Data.SqlClient 4.8.2.</li>
+  <li>Google.Apis 1.54.0.</li>
+  <li>Google.Apis.Core 1.54.0.</li>
+  <li>Google.Apis.Auth 1.54.0.</li>
+  <li>Google.Apis.Drive.v2 1.54.0.2397.</li>
+  <li>Google.Apis.Drive.v3 1.54.0.2397.</li>
+  <li>Google.Apis.Sheets.v4 1.54.0.2371.</li>
+  <li>System.Drawing.Common 5.0.2.</li>
+  <li>System.Text.Encoding.CodePages 5.0.0.</li>
 </ul>
 
 <h2>English</h2>
-<h3>Detail of the version 1.0.23.8930 (2020/07/13)</h3>
+
+<h3>IMPORTANT!!</h3>
+<p>This Nuget package<a href="https://www.nuget.org/packages/Utilities.NETFX40.dll/">Utilities.NETFX40.dll</a> will no longer be supported. Use the package for .NET Core.</p>
+
+<h3>Detail of the version 1.0.24.6032 (2021/08/26)</h3>
 <ul type="square">
-  <li>Fix to <strong>RandomString</strong> function in <strong>Tool</strong> class.</li>
+  <li>Redesign of the library for .NET Core 3.1 onwards, based on the principle of dependency injection.</li>
+  <li>The <strong>JSONSerialization, LogBuilder, and LogFiles</strong> components, among other unnecessary objects, are removed.</li>
+  <li>Redesign of the database connection functions for SQL Server, ODBC and MySQL | MariaDB connections by means of dependency injection.</li>
   <li>Other additional settings.</li>
 </ul>
 
 <h3>Compilation and execution requirements</h3>
 <ul type="square">
-  <li>This assembly is executed with a version of Microsoft .NET Core 3.0 onwards in multiplatform.</li>
+  <li>This assembly is executed with a version of Microsoft .NET Core 3.1 onwards in multiplatform.</li>
 </ul>
 
 <h3>Download the assembly</h3>
@@ -65,26 +89,38 @@ Generic library for the functions of the exclusive programmer for the Microsoft 
 <p>The following dependencies necessary for its correct execution:</p>
 
 <ul type="square">
-  <li>Microsoft.EntityFrameworkCore 3.1.1 (or higher).</li>
-  <li>Microsoft.EntityFrameworkCore.Design 3.1.1 (or higher).</li>
-  <li>Microsoft.EntityFrameworkCore.Sqlite 3.1.1 (or higher).</li>
-  <li>Microsoft.EntityFrameworkCore.SQLServer 3.1.1 (or higher)</li>
-  <li>NewtonSoft 12.0.3 (or higher).</li>
-  <li>Iesi Collections 4.0.4 (or higher).</li>
-  <li>Newtonsoft.Json.Schema 3.0.13 (or higher).</li>
-  <li>Pomelo.EntityFrameworkCore.MySql 3.1.0 (or higher).</li>
-  <li>System.Data.Odbc 4.7.0 (or higher).</li>
-  <li>System.Data.SqlClient 4.8.0 (or higher). </li>
-  <li>Google.Apis 1.48.0 (or higher). </li>
-  <li>Google.Apis.Core 1.48.0 (or higher). </li>
-  <li>Google.Apis.Auth 1.48.0 (or higher). </li>
-  <li>Google.Apis.Drive.v2 1.48.0.1995 (or higher). </li>
-  <li>Google.Apis.Drive.v3 1.48.0.1995 (or higher). </li>
-  <li>Google.Apis.Sheets.v4 1.48.0.2007 (or higher). </li>
+  <li>IESi.Collections 4.0.4.</li>
+  <li>iTextSharp.LGPLv2.Core 1.7.3.</li>
+  <li>Microsoft.EntityFrameworkCore 5.0.9.</li>
+  <li>Microsoft.EntityFrameworkCore.Design 5.0.9.</li>
+  <li>Microsoft.EntityFrameworkCore.Relational 5.0.9.</li>
+  <li>Microsoft.EntityFrameworkCore.Sqlite 5.0.9.</li>
+  <li>Microsoft.EntityFrameworkCore.SqlServer 5.0.9.</li>
+  <li>Microsoft.Extensions.Configuration 5.0.0.</li>
+  <li>Microsoft.Extensions.Configuration.Binder 5.0.0.</li>
+  <li>Microsoft.Extensions.Configuration.EnvironmentVariables 5.0.0.</li>
+  <li>Microsoft.Extensions.Configuration.FileExtensions 5.0.0.</li>
+  <li>Microsoft.Extensions.Configuration.JSON 5.0.0.</li>
+  <li>Microsoft.Extensions.Localization 5.0.9.</li>
+  <li>MySql.Data 8.0.26.</li>
+  <li>Newtonsoft.Json.Schema 3.0.14.</li>
+  <li>PdfSharpCore 1.2.17.</li>
+  <li>NewtonSoft.json 13.0.1.</li>
+  <li>Pomelo.EntityFrameworkCore.MySql 5.0.1.</li>
+  <li>System.Data.Odbc 5.0.0.</li>
+  <li>System.Data.SqlClient 4.8.2.</li>
+  <li>Google.Apis 1.54.0.</li>
+  <li>Google.Apis.Core 1.54.0.</li>
+  <li>Google.Apis.Auth 1.54.0.</li>
+  <li>Google.Apis.Drive.v2 1.54.0.2397.</li>
+  <li>Google.Apis.Drive.v3 1.54.0.2397.</li>
+  <li>Google.Apis.Sheets.v4 1.54.0.2371.</li>
+  <li>System.Drawing.Common 5.0.2.</li>
+  <li>System.Text.Encoding.CodePages 5.0.0.</li>
 </ul>
 
 <h2>Información adicional</h2>
 <strong>Autor:</strong> OLIMPO BONILLA RAMIREZ.<br/>
-<strong>versi&oacute;n:</strong> 1.0.23.8930 <br/>
+<strong>versi&oacute;n:</strong> 1.0.24.6032 <br/>
 <strong>Correo electronico:</strong> boraolim@hotmail.com <br />
-<strong>Ultima actualización:</strong> 13 de julio de 2020. Ciudad de M&eacute;xico.
+<strong>Ultima actualización:</strong> 26 de agosto de 2021. Ciudad de M&eacute;xico.
