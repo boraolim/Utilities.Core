@@ -6,7 +6,7 @@ Generic library for the functions of the exclusive programmer for the Microsoft 
 <h3>NOTA IMPORTANTE</h3>
 <p>El paquete de Nuget<a href="https://www.nuget.org/packages/Utilities.NETFX40.dll/">Utilities.NETFX40.dll</a> ya no será soportado. Usar el paquete para .NET Core.</p>
 
-<h3>Detalle de la versi&oacute;n 1.0.24.6032 (2021/08/26)</h3>
+<h3>Detalle de la versi&oacute;n 1.0.24.6035 (2021/08/28)</h3>
 <ul type="square">
   <li>Rediseño de la librería para .NET Core 3.1 en adelante, en base al principio de inyección de dependencias.</li>
   <li>Se eliminan los componentes <strong>JSONSerialization, LogBuilder y LogFiles</strong>, entre otros objetos innecesarios.</li>
@@ -65,7 +65,7 @@ Generic library for the functions of the exclusive programmer for the Microsoft 
 <h3>IMPORTANT!!</h3>
 <p>This Nuget package<a href="https://www.nuget.org/packages/Utilities.NETFX40.dll/">Utilities.NETFX40.dll</a> will no longer be supported. Use the package for .NET Core.</p>
 
-<h3>Detail of the version 1.0.24.6032 (2021/08/26)</h3>
+<h3>Detail of the version 1.0.24.6035 (2021/08/28)</h3>
 <ul type="square">
   <li>Redesign of the library for .NET Core 3.1 onwards, based on the principle of dependency injection.</li>
   <li>The <strong>JSONSerialization, LogBuilder, and LogFiles</strong> components, among other unnecessary objects, are removed.</li>
@@ -121,6 +121,6 @@ Generic library for the functions of the exclusive programmer for the Microsoft 
 
 <h2>Información adicional</h2>
 <strong>Autor:</strong> OLIMPO BONILLA RAMIREZ.<br/>
-<strong>versi&oacute;n:</strong> 1.0.24.6032 <br/>
+<strong>versi&oacute;n:</strong> 1.0.24.6035 <br/>
 <strong>Correo electronico:</strong> boraolim@hotmail.com <br />
-<strong>Ultima actualización:</strong> 26 de agosto de 2021. Ciudad de M&eacute;xico.
+<strong>Ultima actualización:</strong> 28 de agosto de 2021. Ciudad de M&eacute;xico.
