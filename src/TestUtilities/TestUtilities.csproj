@@ -97,7 +97,10 @@
     <PackageReference Include="Google.Apis.Sheets.v4" version="1.54.0.2371" />
     <PackageReference Include="System.Drawing.Common" Version="5.0.2" />
     <PackageReference Include="System.Text.Encoding.CodePages" Version="5.0.0" />
-    <PackageReference Include="Utilities.Core.dll" Version="1.0.24.6032" />
+    <PackageReference Include="Utilities.Core.dll" Version="1.0.24.6035" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TestUtilitiesLibrary\TestUtilitiesLibrary.csproj" />
   </ItemGroup>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(Configuration)' == 'Release'">
   </Target>

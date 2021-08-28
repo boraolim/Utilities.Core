@@ -1,11 +1,10 @@
 ﻿using System.IO;
 using System.Threading.Tasks;
-
-using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 using Utilities;
+using TestUtilitiesLibrary;
 
 namespace TestUtilities
 {
@@ -43,15 +42,18 @@ namespace TestUtilities
 
       /* Definición de la inyección de servicios de 'Utilities'. */
       services.AddTransient<IToolService, ToolService>();
-      services.AddTransient<IDictionaryCollectionService, DictionaryCollectionsService>();
+      services.AddTransient<IDictionaryCollectionService, DictionaryCollectionService>();
       services.AddTransient<IWhereClauseGeneratorService, WhereClauseGeneratorService>();
       services.AddTransient<IRijndaelEncryptionService, RijndaelEncryptionService>();
-      services.AddTransient<ISMSService, MessageSMSService>();
+      services.AddTransient<ISMSService, SMSService>();
       services.AddTransient<IGoogleRepositoryService, GoogleRepositoryService>();
       services.AddTransient(typeof(IXMLSerializationService<>), typeof(XMLSerializationService<>));
       services.AddTransient(typeof(IDbManagerService), typeof(DbManagerService));
 
       /* Otros servicios de la aplicación de la consola. */
+      services.AddTransient<IInterfaceSample, Classsample>();
+
+
       //services.AddTransient<IUser, User>();
 
       return services;

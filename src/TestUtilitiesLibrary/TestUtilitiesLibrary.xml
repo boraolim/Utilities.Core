@@ -1,0 +1,498 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TestUtilitiesLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:TestUtilitiesLibrary.Classsample">
+            <summary>
+            Clase 'ClassSample' que hace algo.
+            </summary>
+            <summary xml:lang="es-MX">
+            Clase 'ClassSample' que hace algo.
+            </summary>
+            <summary xml:lang="en">
+            'ClassSample' class that does something.
+            </summary>
+            <summary xml:lang="en-US">
+            'ClassSample' class that does something.
+            </summary>
+        </member>
+        <member name="P:TestUtilitiesLibrary.Classsample.folderApp">
+            <summary>
+            Carpeta de la aplicación.
+            </summary>
+            <summary xml:lang="es-MX">
+            Carpeta de la aplicación.
+            </summary>
+            <summary xml:lang="en">
+            Application folder.
+            </summary>
+            <summary xml:lang="en-US">
+            Application folder.
+            </summary>
+        </member>
+        <member name="P:TestUtilitiesLibrary.Classsample.folderImg">
+            <summary>
+            Carpeta de la aplicación.
+            </summary>
+            <summary xml:lang="es-MX">
+            Carpeta de la aplicación.
+            </summary>
+            <summary xml:lang="en">
+            Application folder.
+            </summary>
+            <summary xml:lang="en-US">
+            Application folder.
+            </summary>
+        </member>
+        <member name="P:TestUtilitiesLibrary.Classsample.folderSrc">
+            <summary>
+            Carpeta de la aplicación.
+            </summary>
+            <summary xml:lang="es-MX">
+            Carpeta de la aplicación.
+            </summary>
+            <summary xml:lang="en">
+            Application folder.
+            </summary>
+            <summary xml:lang="en-US">
+            Application folder.
+            </summary>
+        </member>
+        <member name="P:TestUtilitiesLibrary.Classsample.folderSrcDest">
+            <summary>
+            Carpeta de la aplicación.
+            </summary>
+            <summary xml:lang="es-MX">
+            Carpeta de la aplicación.
+            </summary>
+            <summary xml:lang="en">
+            Application folder.
+            </summary>
+            <summary xml:lang="en-US">
+            Application folder.
+            </summary>
+        </member>
+        <member name="P:TestUtilitiesLibrary.Classsample.folderAuthGoogle">
+            <summary>
+            Carpeta de la aplicación.
+            </summary>
+            <summary xml:lang="es-MX">
+            Carpeta de la aplicación.
+            </summary>
+            <summary xml:lang="en">
+            Application folder.
+            </summary>
+            <summary xml:lang="en-US">
+            Application folder.
+            </summary>
+        </member>
+        <member name="M:TestUtilitiesLibrary.Classsample.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Utilities.IToolService,Utilities.IWhereClauseGeneratorService,TestUtilitiesLibrary.IDummieData,Utilities.IDictionaryCollectionService,Utilities.IRijndaelEncryptionService,Utilities.ISMSService,Utilities.IGoogleRepositoryService,Utilities.IXMLSerializationService{System.Collections.Generic.List{TestUtilitiesLibrary.Customer}},Microsoft.Extensions.Options.IOptions{TestUtilitiesLibrary.ConnectionStringCollection},Utilities.IDbManagerService)">
+            <summary>
+            Constructor de la clase 'ClassSample'.
+            </summary>
+            <summary xml:lang="es-MX">
+            Constructor de la clase 'ClassSample'.
+            </summary>
+            <summary xml:lang="en">
+            Constructor of 'clsDato' class.
+            </summary>
+            <summary xml:lang="en-US">
+            Constructor of 'clsDato' class.
+            </summary>
+        </member>
+        <member name="M:TestUtilitiesLibrary.Classsample.DoActionSomethingAsync">
+            <summary>
+            Una función que hace algo.
+            </summary>
+            <summary xml:lang="es-MX">
+            Una función que hace algo.
+            </summary>
+            <summary xml:lang="en">
+            A function that does something.
+            </summary>
+            <summary xml:lang="en-US">
+            A function that does something.
+            </summary>
+        </member>
+        <member name="T:TestUtilitiesLibrary.DummieData">
+            <summary>
+            Clase 'DummieData'.
+            </summary>
+            <summary xml:lang="es-MX">
+            Interfaz 'DummieData'.
+            </summary>
+            <summary xml:lang="en">
+            'DummieData' class.
+            </summary>
+            <summary xml:lang="en-US">
+            'DummieData' class.
+            </summary>
+        </member>
+        <member name="M:TestUtilitiesLibrary.DummieData.GetCustomers">
+            <summary>
+            Una función que muestra la lista de clientes.
+            </summary>
+            <summary xml:lang="es-MX">
+            Una función que muestra la lista de clientes.
+            </summary>
+            <summary xml:lang="en">
+            A function that displays the list of customers.
+            </summary>
+            <summary xml:lang="en-US">
+            A function that displays the list of customers.
+            </summary>
+        </member>
+        <member name="T:TestUtilitiesLibrary.ConnectionStringCollection">
+            <summary>
+            Clase 'ConnectionStringCollection'.
+            </summary>
+            <summary xml:lang="es-MX">
+            Interfaz 'ConnectionStringCollection'.
+            </summary>
+            <summary xml:lang="en">
+            'ConnectionStringCollection' class.
+            </summary>
+            <summary xml:lang="en-US">
+            'ConnectionStringCollection' class.
+            </summary>
+        </member>
+        <member name="P:TestUtilitiesLibrary.ConnectionStringCollection.ConnectionDbFirst">
+            <summary>
+            Atributo 'ConnectionDbFirst'.
+            </summary>
+            <summary xml:lang="es-MX">
+            Atributo 'ConnectionDbFirst'.
+            </summary>
+            <summary xml:lang="en">
+            'ConnectionDbFirst' attribute.
+            </summary>
+            <summary xml:lang="en-US">
+            'ConnectionDbFirst' attribute.
+            </summary>
+        </member>
+        <member name="P:TestUtilitiesLibrary.ConnectionStringCollection.ConnectionDbSecond">
+            <summary>
+            Atributo 'ConnectionDbSecond'.
+            </summary>
+            <summary xml:lang="es-MX">
+            Atributo 'ConnectionDbSecond'.
+            </summary>
+            <summary xml:lang="en">
+            'ConnectionDbSecond' attribute.
+            </summary>
+            <summary xml:lang="en-US">
+            'ConnectionDbSecond' attribute.
+            </summary>
+        </member>
+        <member name="T:TestUtilitiesLibrary.SysObjects">
+            <summary>
+            Clase 'SysObjects'.
+            </summary>
+            <summary xml:lang="es-MX">
+            Interfaz 'SysObjects'.
+            </summary>
+            <summary xml:lang="en">
+            'SysObjects' class.
+            </summary>
+            <summary xml:lang="en-US">
+            'SysObjects' class.
+            </summary>
+        </member>
+        <member name="P:TestUtilitiesLibrary.SysObjects.name">
+            <summary>
+            Atributo 'name'.
+            </summary>
+            <summary xml:lang="es-MX">
+            Atributo 'name'.
+            </summary>
+            <summary xml:lang="en">
+            'name' attribute.
+            </summary>
+            <summary xml:lang="en-US">
+            'name' attribute.
+            </summary>
+        </member>
+        <member name="P:TestUtilitiesLibrary.SysObjects.id">
+            <summary>
+            Atributo 'id'.
+            </summary>
+            <summary xml:lang="es-MX">
+            Atributo 'id'.
+            </summary>
+            <summary xml:lang="en">
+            'id' attribute.
+            </summary>
+            <summary xml:lang="en-US">
+            'id' attribute.
+            </summary>
+        </member>
+        <member name="T:TestUtilitiesLibrary.Order">
+            <summary>
+            Clase 'Order'.
+            </summary>
+            <summary xml:lang="es-MX">
+            Interfaz 'Order'.
+            </summary>
+            <summary xml:lang="en">
+            'Order' class.
+            </summary>
+            <summary xml:lang="en-US">
+            'Order' class.
+            </summary>
+        </member>
+        <member name="P:TestUtilitiesLibrary.Order.Id">
+            <summary>
+            Atributo 'Id'.
+            </summary>
+            <summary xml:lang="es-MX">
+            Atributo 'Id'.
+            </summary>
+            <summary xml:lang="en">
+            'Id' attribute.
+            </summary>
+            <summary xml:lang="en-US">
+            'Id' attribute.
+            </summary>
+        </member>
+        <member name="P:TestUtilitiesLibrary.Order.Date">
+            <summary>
+            Atributo 'Date'.
+            </summary>
+            <summary xml:lang="es-MX">
+            Atributo 'Date'.
+            </summary>
+            <summary xml:lang="en">
+            'Date' attribute.
+            </summary>
+            <summary xml:lang="en-US">
+            'Date' attribute.
+            </summary>
+        </member>
+        <member name="P:TestUtilitiesLibrary.Order.OrderValue">
+            <summary>
+            Atributo 'OrderValue'.
+            </summary>
+            <summary xml:lang="es-MX">
+            Atributo 'OrderValue'.
+            </summary>
+            <summary xml:lang="en">
+            'OrderValue' attribute.
+            </summary>
+            <summary xml:lang="en-US">
+            'OrderValue' attribute.
+            </summary>
+        </member>
+        <member name="P:TestUtilitiesLibrary.Order.Shipped">
+            <summary>
+            Atributo 'Shipped'.
+            </summary>
+            <summary xml:lang="es-MX">
+            Atributo 'Shipped'.
+            </summary>
+            <summary xml:lang="en">
+            'Shipped' attribute.
+            </summary>
+            <summary xml:lang="en-US">
+            'Shipped' attribute.
+            </summary>
+        </member>
+        <member name="T:TestUtilitiesLibrary.Customer">
+            <summary>
+            Clase 'Customer'.
+            </summary>
+            <summary xml:lang="es-MX">
+            Interfaz 'Customer'.
+            </summary>
+            <summary xml:lang="en">
+            'Customer' class.
+            </summary>
+            <summary xml:lang="en-US">
+            'Customer' class.
+            </summary>
+        </member>
+        <member name="P:TestUtilitiesLibrary.Customer.Id">
+            <summary>
+            Atributo 'Id'.
+            </summary>
+            <summary xml:lang="es-MX">
+            Atributo 'Id'.
+            </summary>
+            <summary xml:lang="en">
+            'Id' attribute.
+            </summary>
+            <summary xml:lang="en-US">
+            'Id' attribute.
+            </summary>
+        </member>
+        <member name="P:TestUtilitiesLibrary.Customer.Name">
+            <summary>
+            Atributo 'Name'.
+            </summary>
+            <summary xml:lang="es-MX">
+            Atributo 'Name'.
+            </summary>
+            <summary xml:lang="en">
+            'Name' attribute.
+            </summary>
+            <summary xml:lang="en-US">
+            'Name' attribute.
+            </summary>
+        </member>
+        <member name="P:TestUtilitiesLibrary.Customer.Address">
+            <summary>
+            Atributo 'Address'.
+            </summary>
+            <summary xml:lang="es-MX">
+            Atributo 'Address'.
+            </summary>
+            <summary xml:lang="en">
+            'Address' attribute.
+            </summary>
+            <summary xml:lang="en-US">
+            'Address' attribute.
+            </summary>
+        </member>
+        <member name="P:TestUtilitiesLibrary.Customer.City">
+            <summary>
+            Atributo 'City'.
+            </summary>
+            <summary xml:lang="es-MX">
+            Atributo 'City'.
+            </summary>
+            <summary xml:lang="en">
+            'City' attribute.
+            </summary>
+            <summary xml:lang="en-US">
+            'City' attribute.
+            </summary>
+        </member>
+        <member name="P:TestUtilitiesLibrary.Customer.Country">
+            <summary>
+            Atributo 'Address'.
+            </summary>
+            <summary xml:lang="es-MX">
+            Atributo 'Address'.
+            </summary>
+            <summary xml:lang="en">
+            'Address' attribute.
+            </summary>
+            <summary xml:lang="en-US">
+            'Address' attribute.
+            </summary>
+        </member>
+        <member name="P:TestUtilitiesLibrary.Customer.ZipCode">
+            <summary>
+            Atributo 'ZipCode'.
+            </summary>
+            <summary xml:lang="es-MX">
+            Atributo 'ZipCode'.
+            </summary>
+            <summary xml:lang="en">
+            'ZipCode' attribute.
+            </summary>
+            <summary xml:lang="en-US">
+            'ZipCode' attribute.
+            </summary>
+        </member>
+        <member name="P:TestUtilitiesLibrary.Customer.Phone">
+            <summary>
+            Atributo 'Phone'.
+            </summary>
+            <summary xml:lang="es-MX">
+            Atributo 'Phone'.
+            </summary>
+            <summary xml:lang="en">
+            'Phone' attribute.
+            </summary>
+            <summary xml:lang="en-US">
+            'Phone' attribute.
+            </summary>
+        </member>
+        <member name="P:TestUtilitiesLibrary.Customer.Email">
+            <summary>
+            Atributo 'Email'.
+            </summary>
+            <summary xml:lang="es-MX">
+            Atributo 'Email'.
+            </summary>
+            <summary xml:lang="en">
+            'Email' attribute.
+            </summary>
+            <summary xml:lang="en-US">
+            'Email' attribute.
+            </summary>
+        </member>
+        <member name="P:TestUtilitiesLibrary.Customer.ContactName">
+            <summary>
+            Atributo 'ContactName'.
+            </summary>
+            <summary xml:lang="es-MX">
+            Atributo 'ContactName'.
+            </summary>
+            <summary xml:lang="en">
+            'ContactName' attribute.
+            </summary>
+            <summary xml:lang="en-US">
+            'ContactName' attribute.
+            </summary>
+        </member>
+        <member name="T:TestUtilitiesLibrary.IDummieData">
+            <summary>
+            Interfaz 'IDummieData'.
+            </summary>
+            <summary xml:lang="es-MX">
+            Interfaz 'IDummieData'.
+            </summary>
+            <summary xml:lang="en">
+            'IDummieData' interface.
+            </summary>
+            <summary xml:lang="en-US">
+            'IDummieData' interface.
+            </summary>
+        </member>
+        <member name="M:TestUtilitiesLibrary.IDummieData.GetCustomers">
+            <summary>
+            Una función que muestra la lista de clientes.
+            </summary>
+            <summary xml:lang="es-MX">
+            Una función que muestra la lista de clientes.
+            </summary>
+            <summary xml:lang="en">
+            A function that displays the list of customers.
+            </summary>
+            <summary xml:lang="en-US">
+            A function that displays the list of customers.
+            </summary>
+        </member>
+        <member name="T:TestUtilitiesLibrary.IInterfaceSample">
+            <summary>
+            Inteface 'IInterfaceSample'.
+            </summary>
+            <summary xml:lang="es-MX">
+            Inteface 'IInterfaceSample'.
+            </summary>
+            <summary xml:lang="en">
+            'IInterfaceSample' interface.
+            </summary>
+            <summary xml:lang="en-US">
+            'IInterfaceSample' interface.
+            </summary>
+        </member>
+        <member name="M:TestUtilitiesLibrary.IInterfaceSample.DoActionSomethingAsync">
+            <summary>
+            Una función que hace algo.
+            </summary>
+            <summary xml:lang="es-MX">
+            Una función que hace algo.
+            </summary>
+            <summary xml:lang="en">
+            A function that does something.
+            </summary>
+            <summary xml:lang="en-US">
+            A function that does something.
+            </summary>
+        </member>
+    </members>
+</doc>
