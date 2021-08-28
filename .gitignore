@@ -21,5 +21,7 @@
 .tmp/
 .vs/
 *.nupkg
-# .vscode/
-src/Unnamed_Protect.crproj
+.vscode/
+*.p12
+*.snk
+*.cer

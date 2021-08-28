@@ -52,8 +52,6 @@ namespace TestUtilities
 
       /* Otros servicios de la aplicación de la consola. */
       services.AddTransient<IInterfaceSample, Classsample>();
-
-
       //services.AddTransient<IUser, User>();
 
       return services;
