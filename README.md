@@ -4,7 +4,7 @@ Generic library for the functions of the exclusive programmer for the Microsoft 
 <h2>Spanish</h2>
 
 <h3>NOTA IMPORTANTE</h3>
-<p>El paquete de Nuget<a href="https://www.nuget.org/packages/Utilities.NETFX40.dll/">Utilities.NETFX40.dll</a> ya no será soportado. Usar el paquete para .NET Core.</p>
+<p>El paquete de Nuget <a href="https://www.nuget.org/packages/Utilities.NETFX40.dll/">Utilities.NETFX40.dll</a> ya no será soportado. Usar el <a href="https://www.nuget.org/packages/Utilities.Core.dll/">paquete para .NET Core.</a></p>
 
 <h3>Detalle de la versi&oacute;n 1.0.24.6035 (2021/08/28)</h3>
 <ul type="square">
@@ -63,7 +63,7 @@ Generic library for the functions of the exclusive programmer for the Microsoft 
 <h2>English</h2>
 
 <h3>IMPORTANT!!</h3>
-<p>This Nuget package<a href="https://www.nuget.org/packages/Utilities.NETFX40.dll/">Utilities.NETFX40.dll</a> will no longer be supported. Use the package for .NET Core.</p>
+<p>This Nuget package <a href="https://www.nuget.org/packages/Utilities.NETFX40.dll/">Utilities.NETFX40.dll</a> will no longer be supported. Use the <a href="https://www.nuget.org/packages/Utilities.Core.dll/">package for .NET Core.</a></p>
 
 <h3>Detail of the version 1.0.24.6035 (2021/08/28)</h3>
 <ul type="square">
