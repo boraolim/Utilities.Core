@@ -10,7 +10,7 @@ This Nuget package <a href="https://www.nuget.org/packages/Utilities.NETFX40.dll
 
 ### Detail of the version 1.0.25.7301 (2022/05/03)
 * The `WhereClauseGeneratorService` and `IWhereClaseGeneratorService` classes are removed, since a new object called `QueryBuilder` is used to perform dynamic queries on data collections.
-* Other additional settings.
+* Other additional settings..
 
 ### Compilation and execution requirements
 This assembly is executed with a version of Microsoft .NET Core 3.1 onwards in multiplatform.
