@@ -1,31 +1,39 @@
-<h1>Utilities.Core.dll - Programmer functions library for .NET Core (source code).</h1>
-Generic library for the functions of the exclusive programmer for the Microsoft .NET Core 3.1 platform onwards.
+#Utilities.Core.dll - Programmer functions library for .NET Core (source code).#
 
-<h2>English</h2>
+[![Nuget](https://img.shields.io/nuget/v/Utilities.Core.dll)](https://www.nuget.org/packages/Utilities.Core.dll/)
+`Utilities.Core` is a generic library for the functions of the exclusive programmer for the Microsoft .NET Core 3.1 platform onwards.
 
-<h3>IMPORTANT!!</h3>
-<p>This Nuget package <a href="https://www.nuget.org/packages/Utilities.NETFX40.dll/">Utilities.NETFX40.dll</a> will no longer be supported. Use the <a href="https://www.nuget.org/packages/Utilities.Core.dll/">package for .NET Core.</a></p>
+##English##
+--
 
-<h3>Detail of the version 1.0.24.6035 (2021/08/28)</h3>
+###IMPORTANT!!###
+--
+<p>This Nuget package<a href="https://www.nuget.org/packages/Utilities.NETFX40.dll/">Utilities.NETFX40.dll</a> will no longer be supported. Use the package for .NET Core.</p>
+
+###Detail of the version 1.0.25.7301 (2022/05/03)###
+--
 <ul type="square">
-  <li>Redesign of the library for .NET Core 3.1 onwards, based on the principle of dependency injection.</li>
-  <li>The <strong>JSONSerialization, LogBuilder, and LogFiles</strong> components, among other unnecessary objects, are removed.</li>
-  <li>Redesign of the database connection functions for SQL Server, ODBC and MySQL | MariaDB connections by means of dependency injection.</li>
+  <li>The `WhereClauseGeneratorService` and `IWhereClaseGeneratorService` classes are removed, since a new object called `QueryBuilder` is used to perform dynamic queries on data collections.</li>
   <li>Other additional settings.</li>
 </ul>
 
-<h3>Compilation and execution requirements</h3>
+###Compilation and execution requirements</h3>###
 <ul type="square">
   <li>This assembly is executed with a version of Microsoft .NET Core 3.1 onwards in multiplatform.</li>
 </ul>
 
-<h3>Download the assembly</h3>
+###Download the assembly###
+--
 <p>To download it, you can go to <a href="https://www.nuget.org/packages/Utilities.Core.dll/">this link</a> or by executing the following statement from the command console in Windows:</p>
 
-<pre>dotnet add package Utilities.Core.dll</pre>
+```
+dotnet add package Utilities.Core.dll
+```
 
 <p>For Linux Ubuntu Server:</p>
-<pre>$ sudo dotnet add package Utilities.Core.dll</pre>
+```
+$ sudo dotnet add package Utilities.Core.dll
+```
 
 <p>The following dependencies necessary for its correct execution:</p>
 
@@ -60,31 +68,37 @@ Generic library for the functions of the exclusive programmer for the Microsoft 
   <li>System.Text.Encoding.CodePages 5.0.0.</li>
 </ul>
 
-<h2>Spanish</h2>
+##Spanish##
 
-<h3>NOTA IMPORTANTE</h3>
-<p>El paquete de Nuget <a href="https://www.nuget.org/packages/Utilities.NETFX40.dll/">Utilities.NETFX40.dll</a> ya no será soportado. Usar el <a href="https://www.nuget.org/packages/Utilities.Core.dll/">paquete para .NET Core.</a></p>
+###NOTA IMPORTANTE###
+--
+<p>El paquete de Nuget <a href="https://www.nuget.org/packages/Utilities.NETFX40.dll/">Utilities.NETFX40.dll</a> ya no será soportado. Usar el paquete para .NET Core.</p>
 
-<h3>Detalle de la versi&oacute;n 1.0.24.6035 (2021/08/28)</h3>
+###Detalle de la versi&oacute;n 1.0.25.7301 (2022/05/03)###
+--
 <ul type="square">
-  <li>Rediseño de la librería para .NET Core 3.1 en adelante, en base al principio de inyección de dependencias.</li>
-  <li>Se eliminan los componentes <strong>JSONSerialization, LogBuilder y LogFiles</strong>, entre otros objetos innecesarios.</li>
-  <li>Rediseño de las funciones de conexión a Base de Datos para SQL Server, conexiones ODBC y MySQL|MariaDB por medio de inyecci&oacute;n de dependencias.</li>
+  <li>Se elimina la clase `WhereClauseGeneratorService` y `IWhereClaseGeneratorService`, debido a que se usa un nuevo objeto llamado `QueryBuilder` para realizar consultas dinámicas a colecciones de datos.</li>
   <li>Otros ajustes adicionales.</li>
  </ul>
 
-<h3>Requisitos de compilaci&oacute;n y ejecuci&oacute;n.</h3>
+###Requisitos de compilaci&oacute;n y ejecuci&oacute;n.###
+--
 <ul type="square">
   <li>Este ensamblado se ejecuta con una versi&oacute;n de Microsoft .NET Core 3.1 en adelante en multiplataforma.</li>
 </ul>
 
-<h3>Descargar el ensamblado.</h3>
+###Descargar el ensamblado.###
+--
 <p>Para descargarlo, puede ir a <a href="https://www.nuget.org/packages/Utilities.Core.dll/">este enlace</a> o bien ejecutando la siguiente sentencia desde la consola de comandos en Windows:</p>
 
-<pre>dotnet add package Utilities.Core.dll</pre>
+```
+dotnet add package Utilities.Core.dll
+```
 
 <p>Para Linux Ubuntu Server:</p>
-<pre>$ sudo dotnet add package Utilities.Core.dll</pre>
+```
+$ sudo dotnet add package Utilities.Core.dll
+```
 
 <p>Las siguientes dependencias son necesarias para su correcta ejecuci&oacute;n:</p>
 
@@ -119,8 +133,9 @@ Generic library for the functions of the exclusive programmer for the Microsoft 
   <li>System.Text.Encoding.CodePages 5.0.0.</li>
 </ul>
 
-<h2>Información adicional</h2>
+##Información adicional##
+--
 <strong>Autor:</strong> OLIMPO BONILLA RAMIREZ.<br/>
-<strong>versi&oacute;n:</strong> 1.0.24.6035 <br/>
+<strong>versi&oacute;n:</strong> 1.0.25.7301 <br/>
 <strong>Correo electronico:</strong> boraolim@hotmail.com <br />
-<strong>Ultima actualización:</strong> 28 de agosto de 2021. Ciudad de M&eacute;xico.
+<strong>Ultima actualización:</strong> 3 de Mayo de 2022.
