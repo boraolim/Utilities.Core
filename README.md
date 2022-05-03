@@ -111,5 +111,5 @@ Además, vea la [Wiki.](https://github.com/boraolim/Utilities.Core/wiki)
 ## Información adicional
 **Autor:** OLIMPO BONILLA RAMIREZ.<br/>
 **Versi&oacute;n:** 1.0.25.7301 <br/>
-**Correo electronico:** [boraolim@hotmail.com](mailto:boraolim@hotmail.com)<br />
+**Correo electr&oacute;nico:** [boraolim@hotmail.com](mailto:boraolim@hotmail.com)<br />
 **&Uacute;ltima actualizaci&oacute;n:** 3 de Mayo de 2022.
