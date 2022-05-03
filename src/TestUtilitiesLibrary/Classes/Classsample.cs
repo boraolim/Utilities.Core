@@ -32,7 +32,6 @@ namespace TestUtilitiesLibrary
     private readonly IConfiguration _config;
     private readonly IToolService _iToolSvc;
     private readonly IDummieData _iDummieData;
-    private readonly IWhereClauseGeneratorService _whereClauseGenSvc;
     private readonly IRijndaelEncryptionService _iRijndaelEncryptionService;
     private readonly IDictionaryCollectionService _iDictionaryCollectionService;
     private readonly ISMSService _iSMSService;
@@ -122,12 +121,12 @@ namespace TestUtilitiesLibrary
     /// <summary xml:lang="en-US">
     /// Constructor of 'clsDato' class.
     /// </summary>
-    public Classsample(IConfiguration config, IToolService iToolSvc, IWhereClauseGeneratorService whereClauseGeneratorSvc, IDummieData dummieData,
+    public Classsample(IConfiguration config, IToolService iToolSvc, IDummieData dummieData,
                IDictionaryCollectionService dictionaryCollectionService, IRijndaelEncryptionService rijndaelEncryptionService,
                ISMSService sMSService, IGoogleRepositoryService googleRepositoryService, IXMLSerializationService<List<Customer>> xMLSerializationService,
                IOptions<ConnectionStringCollection> settings, IDbManagerService dbManager)
     {
-      _config = config; _iToolSvc = iToolSvc; _iDummieData = dummieData; _whereClauseGenSvc = whereClauseGeneratorSvc;
+      _config = config; _iToolSvc = iToolSvc; _iDummieData = dummieData;
       _iRijndaelEncryptionService = rijndaelEncryptionService; _iDictionaryCollectionService = dictionaryCollectionService;
       _iSMSService = sMSService; _iGoogleRepositoryService = googleRepositoryService;
       _iXmlSerializationService = xMLSerializationService; _settings = settings.Value; _iDbManagerSQLServer = dbManager;
@@ -256,18 +255,16 @@ namespace TestUtilitiesLibrary
         /* Probamos el armador de clausulas WHERE dinámicamente. */
         var _newFilter = new WhereFilter()
         {
-          groupOp = GroupOp.AND,
-          rules = new List<WhereRule>()
+          Condition = GroupOp.OR,
+          Rules = new List<WhereFilter>()
           {
-            new WhereRule() { field = "Name", op = WhereConditionsOp.eq, data = "xxx" },
-            new WhereRule() { field = "Id", op = WhereConditionsOp.eq, data = System.Guid.NewGuid().ToString() }
+            new WhereFilter { Field = "Country", Operator = WhereConditionsOp.Equal, Data = new[] { "Mexico" } },
+            new WhereFilter { Field = "ContactName", Operator = WhereConditionsOp.Contains, Data = new[] { "M" } }
           }
         };
 
-        var _ss = await _whereClauseGenSvc.ParserFilterToDynamicLinqAsync<Customer>(_newFilter);
-        var _ss2 = await _whereClauseGenSvc.ParserFilterToEntityFrameworkAsync<Customer>(_newFilter);
-
-        Console.WriteLine($"Clausulas where generadas:\n{_ss}\n{_ss2}");
+        var _ss = _rommieData.BuildQuery(_newFilter).ToList();
+        Console.WriteLine($"Registros obtenidos después del filtro:\n{_ss.Count}");
 
         var _campoGuid = $"{System.Guid.NewGuid().ToString()}";
         var _campoEncriptar = $"QueChingueASuMadreAMLO";

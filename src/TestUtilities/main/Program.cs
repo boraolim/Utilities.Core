@@ -43,7 +43,6 @@ namespace TestUtilities
       /* Definición de la inyección de servicios de 'Utilities'. */
       services.AddTransient<IToolService, ToolService>();
       services.AddTransient<IDictionaryCollectionService, DictionaryCollectionService>();
-      services.AddTransient<IWhereClauseGeneratorService, WhereClauseGeneratorService>();
       services.AddTransient<IRijndaelEncryptionService, RijndaelEncryptionService>();
       services.AddTransient<ISMSService, SMSService>();
       services.AddTransient<IGoogleRepositoryService, GoogleRepositoryService>();
