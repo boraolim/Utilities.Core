@@ -5,9 +5,6 @@
 
 ## English
 
-### IMPORTANT!!
-This Nuget package <a href="https://www.nuget.org/packages/Utilities.NETFX40.dll/">Utilities.NETFX40.dll</a> will no longer be supported. Use the package for .NET Core.
-
 ### Detail of the version 1.0.25.7301 (2022/05/03)
 * The `WhereClauseGeneratorService` and `IWhereClaseGeneratorService` objects are removed, since a new object called `QueryBuilder` is used to perform dynamic queries on data collections.
 * Other additional settings.
@@ -55,9 +52,6 @@ The following dependencies necessary for its correct execution:
 * System.Text.Encoding.CodePages 5.0.0.
 
 ## Spanish
-
-### NOTA IMPORTANTE
-El paquete de Nuget <a href="https://www.nuget.org/packages/Utilities.NETFX40.dll/">Utilities.NETFX40.dll</a> ya no será soportado. Usar el paquete para .NET Core.
 
 ### Detalle de la versi&oacute;n 1.0.25.7301 (2022/05/03)
 * Se eliminan los objetos `WhereClauseGeneratorService` y `IWhereClaseGeneratorService`, debido a que se usa un nuevo objeto llamado `QueryBuilder` para realizar consultas dinámicas a colecciones de datos.
@@ -107,7 +101,7 @@ Las siguientes dependencias son necesarias para su correcta ejecuci&oacute;n:
 * System.Text.Encoding.CodePages 5.0.0.
 
 ## Información adicional
-<strong>Autor:</strong> OLIMPO BONILLA RAMIREZ.<br/>
-<strong>versi&oacute;n:</strong> 1.0.25.7301 <br/>
-<strong>Correo electronico:</strong> boraolim@hotmail.com <br />
-<strong>Ultima actualización:</strong> 3 de Mayo de 2022.
+**Autor:** OLIMPO BONILLA RAMIREZ.<br/>
+**versi&oacute;n:** 1.0.25.7301 <br/>
+**Correo electronico:** boraolim@hotmail.com <br />
+**Ultima actualización:** 3 de Mayo de 2022.
