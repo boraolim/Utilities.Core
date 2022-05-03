@@ -1,0 +1,31 @@
+name: Deploy to Release
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET Core SDK
+      uses: actions/setup-dotnet@v2.0.0
+      with:
+        dotnet-version: 6.0.*
+    - name: Cleaning project
+      run: dotnet clean src/TestUtilities/TestUtilities.csproj
+    - name: Restore dependencies
+      run: dotnet restore src/TestUtilities/TestUtilities.csproj
+    - name: Build to Debug
+      run: dotnet build src/TestUtilities/TestUtilities.csproj -c Debug
+    - name: Build to Release
+      run: dotnet build src/TestUtilities/TestUtilities.csproj -c Release
+    - name: Publish to Release
+      run: dotnet publish src/TestUtilities/TestUtilities.csproj -c Release
+    - name: Test
+      run: dotnet test src/TestUtilities/TestUtilities.csproj --no-build --verbosity normal
