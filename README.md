@@ -102,6 +102,6 @@ Las siguientes dependencias son necesarias para su correcta ejecuci&oacute;n:
 
 ## Información adicional
 **Autor:** OLIMPO BONILLA RAMIREZ.<br/>
-**versi&oacute;n:** 1.0.25.7301 <br/>
+**Versi&oacute;n:** 1.0.25.7301 <br/>
 **Correo electronico:** boraolim@hotmail.com <br />
-**Ultima actualización:** 3 de Mayo de 2022.
+**&Uacute;ltima actualizaci&oacute;n:** 3 de Mayo de 2022.
