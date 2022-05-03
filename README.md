@@ -13,7 +13,7 @@
 This assembly is executed with a version of Microsoft .NET Core 3.1 onwards in multiplatform.
 
 ### Download the assembly
-To download it, you can go to <a href="https://www.nuget.org/packages/Utilities.Core.dll/">this link</a> or by executing the following statement from the command console in Windows:
+To download it, you can go to [this link](https://www.nuget.org/packages/Utilities.Core.dll) or by executing the following statement from the command console in Windows:
 ```
 dotnet add package Utilities.Core.dll
 ```
@@ -65,7 +65,7 @@ Additionally, see the [Wiki.](https://github.com/boraolim/Utilities.Core/wiki)
 Este ensamblado se ejecuta con una versi&oacute;n de Microsoft .NET Core 3.1 en adelante en multiplataforma.
 
 ### Descargar el ensamblado.
-Para descargarlo, puede ir a <a href="https://www.nuget.org/packages/Utilities.Core.dll/">este enlace</a> o bien ejecutando la siguiente sentencia desde la consola de comandos en Windows:
+Para descargarlo, puede ir a [este enlace](https://www.nuget.org/packages/Utilities.Core.dll) o bien ejecutando la siguiente sentencia desde la consola de comandos en Windows:
 ```
 dotnet add package Utilities.Core.dll
 ```
