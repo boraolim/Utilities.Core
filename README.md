@@ -1,6 +1,6 @@
 # Utilities.Core.dll - Programmer functions library for .NET Core (source code).
 
-[![Nuget](https://img.shields.io/nuget/v/Utilities.Core.dll)](https://www.nuget.org/packages/Utilities.Core.dll/)&nbsp[![Nuget](https://img.shields.io/nuget/dt/Utilities.Core.dll)](https://www.nuget.org/packages/Utilities.Core.dll/)<br/>
+[![Nuget](https://img.shields.io/nuget/v/Utilities.Core.dll)](https://www.nuget.org/packages/Utilities.Core.dll/)&nbsp;[![Nuget](https://img.shields.io/nuget/dt/Utilities.Core.dll)](https://www.nuget.org/packages/Utilities.Core.dll/)<br/>
 `Utilities.Core` is a generic library for the functions of the exclusive programmer for the Microsoft .NET Core 3.1 platform onwards.
 
 ## English
