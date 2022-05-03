@@ -1,9 +1,9 @@
 # Utilities.Core for .NET Core
 
 [![Nuget](https://img.shields.io/nuget/v/Utilities.Core.dll)](https://www.nuget.org/packages/Utilities.Core.dll/)&nbsp;[![Nuget](https://img.shields.io/nuget/dt/Utilities.Core.dll)](https://www.nuget.org/packages/Utilities.Core.dll/)<br/>
-`Utilities.Core` is a generic library for the functions of the exclusive programmer for the Microsoft .NET Core 3.1 platform onwards.
 
 ## English
+`Utilities.Core` is a generic library for the functions of the exclusive programmer for the Microsoft .NET Core 3.1 platform onwards.
 
 ### Detail of the version 1.0.25.7301 (2022/05/03)
 * The `WhereClauseGeneratorService` and `IWhereClaseGeneratorService` objects are removed, since a new object called `QueryBuilder` is used to perform dynamic queries on data collections.
@@ -56,6 +56,7 @@ The easiest way to get started is to install the NuGet package and take a look a
 Additionally, see the [Wiki.](https://github.com/boraolim/Utilities.Core/wiki)
 
 ## Spanish
+`Utilities.Core` es una biblioteca genérica para las funciones del programador exclusivo para la plataforma Microsoft .NET Core 3.1 en adelante.
 
 ### Detalle de la versi&oacute;n 1.0.25.7301 (2022/05/03)
 * Se eliminan los objetos `WhereClauseGeneratorService` y `IWhereClaseGeneratorService`, debido a que se usa un nuevo objeto llamado `QueryBuilder` para realizar consultas dinámicas a colecciones de datos.
