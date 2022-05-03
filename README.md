@@ -22,37 +22,37 @@ For Linux Ubuntu Server:
 $ sudo dotnet add package Utilities.Core.dll
 ```
 The following dependencies necessary for its correct execution:
-* [IESi.Collections 4.0.4.](https://www.nuget.org/packages/Iesi.Collections/)
-* [iTextSharp.LGPLv2.Core 1.7.3.](https://www.nuget.org/packages/iTextSharp.LGPLv2.Core/)
-* Microsoft.EntityFrameworkCore 5.0.9.
-* Microsoft.EntityFrameworkCore.Design 5.0.9.
-* Microsoft.EntityFrameworkCore.Relational 5.0.9.
-* Microsoft.EntityFrameworkCore.Sqlite 5.0.9.
-* Microsoft.EntityFrameworkCore.SqlServer 5.0.9.
-* Microsoft.Extensions.Configuration 5.0.0.
-* Microsoft.Extensions.Configuration.Binder 5.0.0.
-* Microsoft.Extensions.Configuration.EnvironmentVariables 5.0.0.
-* Microsoft.Extensions.Configuration.FileExtensions 5.0.0.
-* Microsoft.Extensions.Configuration.JSON 5.0.0.
-* Microsoft.Extensions.Localization 5.0.9.
-* MySql.Data 8.0.26.
-* Newtonsoft.Json.Schema 3.0.14.
-* PdfSharpCore 1.2.17.
-* NewtonSoft.json 13.0.1.
-* Pomelo.EntityFrameworkCore.MySql 5.0.1.
-* System.Data.Odbc 5.0.0.
-* System.Data.SqlClient 4.8.2.
-* Google.Apis 1.54.0.
-* Google.Apis.Core 1.54.0.
-* Google.Apis.Auth 1.54.0.
-* Google.Apis.Drive.v2 1.54.0.2397.
-* Google.Apis.Drive.v3 1.54.0.2397.
-* Google.Apis.Sheets.v4 1.54.0.2371.
-* System.Drawing.Common 5.0.2.
-* System.Text.Encoding.CodePages 5.0.0.
+* [Iesi.Collections.](https://www.nuget.org/packages/Iesi.Collections/)
+* [iTextSharp.LGPLv2.Core.](https://www.nuget.org/packages/iTextSharp.LGPLv2.Core/)
+* [Microsoft.EntityFrameworkCore.](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/)
+* [Microsoft.EntityFrameworkCore.Design.](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/)
+* [Microsoft.EntityFrameworkCore.Relational.](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Relational/)
+* [Microsoft.EntityFrameworkCore.Sqlite.](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Sqlite/)
+* [Microsoft.EntityFrameworkCore.SqlServer.](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/)
+* [Microsoft.Extensions.Configuration.](https://www.nuget.org/packages/Microsoft.Extensions.Configuration/)
+* [Microsoft.Extensions.Configuration.Binder.](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Binder/)
+* [Microsoft.Extensions.Configuration.EnvironmentVariables.](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.EnvironmentVariables/)
+* [Microsoft.Extensions.Configuration.FileExtensions.](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.FileExtensions/)
+* [Microsoft.Extensions.Configuration.JSON.](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Json/)
+* [Microsoft.Extensions.Localization.](https://www.nuget.org/packages/Microsoft.Extensions.Localization/)
+* [MySql.Data.](https://www.nuget.org/packages/MySql.Data/)
+* [Newtonsoft.Json.Schema.](https://www.nuget.org/packages/Newtonsoft.Json.Schema/)
+* [PdfSharpCore.](https://www.nuget.org/packages/PdfSharpCore/)
+* [NewtonSoft.JSON.](https://www.nuget.org/packages/Newtonsoft.Json/)
+* [Pomelo.EntityFrameworkCore.MySql.](https://www.nuget.org/packages/Pomelo.EntityFrameworkCore.MySql/)
+* [System.Data.Odbc.](https://www.nuget.org/packages/System.Data.Odbc/)
+* [System.Data.SqlClient.](https://www.nuget.org/packages/System.Data.SqlClient/)
+* [Google.Apis.](https://www.nuget.org/packages/Google.Apis/)
+* [Google.Apis.Core.](https://www.nuget.org/packages/Google.Apis.Core/)
+* [Google.Apis.Auth.](https://www.nuget.org/packages/Google.Apis.Auth/)
+* [Google.Apis.Drive.v2.](https://www.nuget.org/packages/Google.Apis.Drive.v2/)
+* [Google.Apis.Drive.v3.](https://www.nuget.org/packages/Google.Apis.Drive.v3/)
+* [Google.Apis.Sheets.v4.](https://www.nuget.org/packages/Google.Apis.Sheets.v4/)
+* [System.Drawing.Common.](https://www.nuget.org/packages/System.Drawing.Common/)
+* [System.Text.Encoding.CodePages.](https://www.nuget.org/packages/System.Text.Encoding.CodePages/)
 
 ### Getting Started
-The easiest way to get started is to install the NuGet package and take a look at the console application included in the source code. It contains a working example of both dynamic-linq-query-builder and jQuery-QueryBuilder.
+The easiest way to get started is to install the NuGet package and take a look at the console application included in the source code. It contains a working example of Utilities.Core for .NET Core.
 Additionally, see the [Wiki.](https://github.com/boraolim/Utilities.Core/wiki)
 
 ## Spanish
@@ -74,35 +74,34 @@ Para Linux Ubuntu Server:
 $ sudo dotnet add package Utilities.Core.dll
 ```
 Las siguientes dependencias son necesarias para su correcta ejecuci&oacute;n:
-
-* IESi.Collections 4.0.4.
-* iTextSharp.LGPLv2.Core 1.7.3.
-* Microsoft.EntityFrameworkCore 5.0.9.
-* Microsoft.EntityFrameworkCore.Design 5.0.9.
-* Microsoft.EntityFrameworkCore.Relational 5.0.9.
-* Microsoft.EntityFrameworkCore.Sqlite 5.0.9.
-* Microsoft.EntityFrameworkCore.SqlServer 5.0.9.
-* Microsoft.Extensions.Configuration 5.0.0.
-* Microsoft.Extensions.Configuration.Binder 5.0.0.
-* Microsoft.Extensions.Configuration.EnvironmentVariables 5.0.0.
-* Microsoft.Extensions.Configuration.FileExtensions 5.0.0.
-* Microsoft.Extensions.Configuration.JSON 5.0.0.
-* Microsoft.Extensions.Localization 5.0.9.
-* MySql.Data 8.0.26.
-* Newtonsoft.Json.Schema 3.0.14.
-* PdfSharpCore 1.2.17.
-* NewtonSoft.json 13.0.1.
-* Pomelo.EntityFrameworkCore.MySql 5.0.1.
-* System.Data.Odbc 5.0.0.
-* System.Data.SqlClient 4.8.2.
-* Google.Apis 1.54.0.
-* Google.Apis.Core 1.54.0.
-* Google.Apis.Auth 1.54.0.
-* Google.Apis.Drive.v2 1.54.0.2397.
-* Google.Apis.Drive.v3 1.54.0.2397.
-* Google.Apis.Sheets.v4 1.54.0.2371.
-* System.Drawing.Common 5.0.2.
-* System.Text.Encoding.CodePages 5.0.0.
+* [Iesi.Collections.](https://www.nuget.org/packages/Iesi.Collections/)
+* [iTextSharp.LGPLv2.Core.](https://www.nuget.org/packages/iTextSharp.LGPLv2.Core/)
+* [Microsoft.EntityFrameworkCore.](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/)
+* [Microsoft.EntityFrameworkCore.Design.](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/)
+* [Microsoft.EntityFrameworkCore.Relational.](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Relational/)
+* [Microsoft.EntityFrameworkCore.Sqlite.](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Sqlite/)
+* [Microsoft.EntityFrameworkCore.SqlServer.](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/)
+* [Microsoft.Extensions.Configuration.](https://www.nuget.org/packages/Microsoft.Extensions.Configuration/)
+* [Microsoft.Extensions.Configuration.Binder.](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Binder/)
+* [Microsoft.Extensions.Configuration.EnvironmentVariables.](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.EnvironmentVariables/)
+* [Microsoft.Extensions.Configuration.FileExtensions.](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.FileExtensions/)
+* [Microsoft.Extensions.Configuration.JSON.](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Json/)
+* [Microsoft.Extensions.Localization.](https://www.nuget.org/packages/Microsoft.Extensions.Localization/)
+* [MySql.Data.](https://www.nuget.org/packages/MySql.Data/)
+* [Newtonsoft.Json.Schema.](https://www.nuget.org/packages/Newtonsoft.Json.Schema/)
+* [PdfSharpCore.](https://www.nuget.org/packages/PdfSharpCore/)
+* [NewtonSoft.JSON.](https://www.nuget.org/packages/Newtonsoft.Json/)
+* [Pomelo.EntityFrameworkCore.MySql.](https://www.nuget.org/packages/Pomelo.EntityFrameworkCore.MySql/)
+* [System.Data.Odbc.](https://www.nuget.org/packages/System.Data.Odbc/)
+* [System.Data.SqlClient.](https://www.nuget.org/packages/System.Data.SqlClient/)
+* [Google.Apis.](https://www.nuget.org/packages/Google.Apis/)
+* [Google.Apis.Core.](https://www.nuget.org/packages/Google.Apis.Core/)
+* [Google.Apis.Auth.](https://www.nuget.org/packages/Google.Apis.Auth/)
+* [Google.Apis.Drive.v2.](https://www.nuget.org/packages/Google.Apis.Drive.v2/)
+* [Google.Apis.Drive.v3.](https://www.nuget.org/packages/Google.Apis.Drive.v3/)
+* [Google.Apis.Sheets.v4.](https://www.nuget.org/packages/Google.Apis.Sheets.v4/)
+* [System.Drawing.Common.](https://www.nuget.org/packages/System.Drawing.Common/)
+* [System.Text.Encoding.CodePages.](https://www.nuget.org/packages/System.Text.Encoding.CodePages/)
 
 ### Empezando
 La forma más sencilla de comenzar es instalar el paquete NuGet y echar un vistazo a la aplicación de consola incluida en el código fuente. Contiene un ejemplo funcional de Utilities.Core para .NET Core.
