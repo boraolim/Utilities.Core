@@ -51,6 +51,10 @@ The following dependencies necessary for its correct execution:
 * System.Drawing.Common 5.0.2.
 * System.Text.Encoding.CodePages 5.0.0.
 
+### Getting Started
+The easiest way to get started is to install the NuGet package and take a look at the console application included in the source code. It contains a working example of both dynamic-linq-query-builder and jQuery-QueryBuilder.
+Additionally, see the [Wiki.](https://github.com/boraolim/Utilities.Core/wiki)
+
 ## Spanish
 
 ### Detalle de la versi&oacute;n 1.0.25.7301 (2022/05/03)
@@ -99,6 +103,10 @@ Las siguientes dependencias son necesarias para su correcta ejecuci&oacute;n:
 * Google.Apis.Sheets.v4 1.54.0.2371.
 * System.Drawing.Common 5.0.2.
 * System.Text.Encoding.CodePages 5.0.0.
+
+### Empezando
+La forma más sencilla de comenzar es instalar el paquete NuGet y echar un vistazo a la aplicación de consola incluida en el código fuente. Contiene un ejemplo funcional de Utilities.Core para .NET Core.
+Además, vea la [Wiki.](https://github.com/boraolim/Utilities.Core/wiki)
 
 ## Información adicional
 **Autor:** OLIMPO BONILLA RAMIREZ.<br/>
