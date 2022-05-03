@@ -22,8 +22,8 @@ For Linux Ubuntu Server:
 $ sudo dotnet add package Utilities.Core.dll
 ```
 The following dependencies necessary for its correct execution:
-* IESi.Collections 4.0.4.
-* iTextSharp.LGPLv2.Core 1.7.3.
+* [IESi.Collections 4.0.4.](https://www.nuget.org/packages/Iesi.Collections/)
+* [iTextSharp.LGPLv2.Core 1.7.3.](https://www.nuget.org/packages/iTextSharp.LGPLv2.Core/)
 * Microsoft.EntityFrameworkCore 5.0.9.
 * Microsoft.EntityFrameworkCore.Design 5.0.9.
 * Microsoft.EntityFrameworkCore.Relational 5.0.9.
