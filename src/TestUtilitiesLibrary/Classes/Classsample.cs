@@ -264,7 +264,18 @@ namespace TestUtilitiesLibrary
         };
 
         var _ss = _rommieData.BuildQuery(_newFilter).ToList();
-        Console.WriteLine($"Registros obtenidos después del filtro:\n{_ss.Count}");
+        Console.WriteLine($"Registros obtenidos después del filtro (BuildQuery):\n{_ss.Count}");
+
+        var _predicate = QueryBuilder.BuildPredicate<Customer>(_newFilter, new BuildExpressionOptions() { ParseDatesAsUtc = false });
+        var _ss1 = _rommieData.Where(_predicate).ToList();
+        Console.WriteLine($"Registros obtenidos después del filtro (predicate):\n{_ss1.Count}");
+
+        var parsedQuery = string.Empty;
+        var _lambda = QueryBuilder.BuildExpressionLambda<Customer>(_newFilter, new BuildExpressionOptions() { ParseDatesAsUtc = false }, out parsedQuery);
+        var _ss2 = _rommieData.AsQueryable().Where(_lambda).ToList();
+        Console.WriteLine($"Registros obtenidos después del filtro (lambda):\n{_ss2.Count}");
+        Console.WriteLine($"Filtro de texto: {parsedQuery}");
+
 
         var _campoGuid = $"{System.Guid.NewGuid().ToString()}";
         var _campoEncriptar = $"QueChingueASuMadreAMLO";

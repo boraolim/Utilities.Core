@@ -5,7 +5,7 @@
 ## English
 `Utilities.Core` is a generic library for the functions of the exclusive programmer for the Microsoft .NET Core 3.1 platform onwards.
 
-### Detail of the version 1.0.25.7301 (2022/05/03)
+### Detail of the version 1.0.25.7302 (2022/05/04)
 * The `WhereClauseGeneratorService` and `IWhereClaseGeneratorService` objects are removed, since a new object called `QueryBuilder` is used to perform dynamic queries on data collections.
 * Other additional settings.
 
@@ -58,7 +58,7 @@ Additionally, see the [Wiki.](https://github.com/boraolim/Utilities.Core/wiki)
 ## Spanish
 `Utilities.Core` es una biblioteca genérica para las funciones del programador exclusivo para la plataforma Microsoft .NET Core 3.1 en adelante.
 
-### Detalle de la versi&oacute;n 1.0.25.7301 (2022/05/03)
+### Detalle de la versi&oacute;n 1.0.25.7302 (2022/05/04)
 * Se eliminan los objetos `WhereClauseGeneratorService` y `IWhereClaseGeneratorService`, debido a que se usa un nuevo objeto llamado `QueryBuilder` para realizar consultas dinámicas a colecciones de datos.
 * Otros ajustes adicionales.
 
@@ -110,6 +110,6 @@ Además, vea la [Wiki.](https://github.com/boraolim/Utilities.Core/wiki)
 
 ## Información adicional
 **Autor:** OLIMPO BONILLA RAMIREZ.<br/>
-**Versi&oacute;n:** 1.0.25.7301 <br/>
+**Versi&oacute;n:** 1.0.25.7302 <br/>
 **Correo electr&oacute;nico:** [boraolim@hotmail.com](mailto:boraolim@hotmail.com)<br />
-**&Uacute;ltima actualizaci&oacute;n:** 3 de Mayo de 2022.
+**&Uacute;ltima actualizaci&oacute;n:** 4 de Mayo de 2022.
