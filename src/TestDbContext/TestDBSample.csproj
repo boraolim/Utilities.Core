@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+      <TargetFrameworks>net5.0;netcoreapp3.1</TargetFrameworks>
+      <FileAlignment>512</FileAlignment>
+      <TargetFrameworkProfile />
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Update="AppSettings.json" CopyToOutputDirectory="Always" CopyToPublishDirectory="Always" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Bogus" Version="33.0.2" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.15" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="5.0.15" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.15">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.15" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.15" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.15">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="5.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="5.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="5.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.JSON" Version="5.0.0" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Localization" Version="5.0.9" />
+        <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="5.0.0" />
+        <PackageReference Include="Utilities.Core.dll" Version="1.0.25.7303" />
+    </ItemGroup>
+</Project>
