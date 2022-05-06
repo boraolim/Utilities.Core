@@ -1,15 +1,26 @@
-# Para obtener más información sobre los archivos .editorconfig, vea https://aka.ms/editorconfigdocs
+﻿# Para obtener más información sobre los archivos .editorconfig, vea https://aka.ms/editorconfigdocs
 ###############################
 # Core EditorConfig Options   #
 ###############################
+root = true
+
 # All files
 [*]
 indent_style = space
+indent_size = 4
+end_of_line = lf
+charset = utf-8-bom
+trim_trailing_whitespace = true
+insert_final_newline = true
+
 # Code files
 [*.{cs,csx,vb,vbx}]
-indent_size = 2
+indent_size = 4
 insert_final_newline = true
 charset = utf-8-bom
+end_of_line = lf
+indent_style = space
+
 ###############################
 # .NET Coding Conventions     #
 ###############################

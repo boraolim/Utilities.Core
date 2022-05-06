@@ -2,9 +2,10 @@
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-      <TargetFrameworks>net5.0;netcoreapp3.1</TargetFrameworks>
-      <FileAlignment>512</FileAlignment>
-      <TargetFrameworkProfile />
+        <TargetFrameworks>net5.0;netcoreapp3.1</TargetFrameworks>
+        <FileAlignment>512</FileAlignment>
+        <TargetFrameworkProfile />
+        <NoWarn>$(NoWarn);1701;1702;NU1701;1571;1723;1710;1573;1572;0414;0169;1591;0219;8002;AD0001</NoWarn>
     </PropertyGroup>
 
     <ItemGroup>
@@ -35,6 +36,6 @@
         <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
         <PackageReference Include="Microsoft.Extensions.Localization" Version="5.0.9" />
         <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="5.0.0" />
-        <PackageReference Include="Utilities.Core.dll" Version="1.0.25.7303" />
+        <PackageReference Include="Utilities.Core.dll" Version="1.0.25.7304" />
     </ItemGroup>
 </Project>

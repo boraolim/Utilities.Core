@@ -16,11 +16,11 @@ using TestUtilitiesLibrary;
 
 namespace TestUtilities
 {
-  public class App
-  {
-    private readonly IInterfaceSample _interfaceSample1;
-    public App(IInterfaceSample interfaceSample) => _interfaceSample1 = interfaceSample;
+    public class App
+    {
+        private readonly IInterfaceSample _interfaceSample1;
+        public App(IInterfaceSample interfaceSample) => _interfaceSample1 = interfaceSample;
 
-    public async Task RunAsync(string[] args) => await _interfaceSample1.DoActionSomethingAsync();
-  }
+        public async Task RunAsync(string[] args) => await _interfaceSample1.DoActionSomethingAsync();
+    }
 }
